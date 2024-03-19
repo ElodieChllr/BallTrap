@@ -6,7 +6,7 @@
             "id": "a1363439-d05b-48c2-8ad4-6be93070afc2",
             "actions": [
                 {
-                    "name": "New action",
+                    "name": "Shoot",
                     "type": "Button",
                     "id": "d2c2ef1b-156a-4e21-97ba-aa3eb1e19a48",
                     "expectedControlType": "Button",
@@ -23,7 +23,7 @@
                     "interactions": "",
                     "processors": "",
                     "groups": "",
-                    "action": "New action",
+                    "action": "Shoot",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }
