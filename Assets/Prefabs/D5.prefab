@@ -139,7 +139,6 @@ MonoBehaviour:
   points: 10
   scoreManager: {fileID: 0}
   canardManagerRef: {fileID: 0}
-  QuackClip: {fileID: 8300000, guid: e3d07d0ac851d6d4088af68f00e92001, type: 3}
   QuackSource: {fileID: 8213408634717153985}
 --- !u!114 &-7249432231185790106
 MonoBehaviour:

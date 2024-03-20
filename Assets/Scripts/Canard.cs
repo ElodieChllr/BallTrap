@@ -7,7 +7,7 @@ public class Canard : MonoBehaviour
     public int points = 10;
     public ScoreManager scoreManager;
     public CanardManager canardManagerRef;
-    public AudioClip QuackClip;
+    //public AudioClip QuackClip;
     public AudioSource QuackSource;
 
     private Vector3 positionCible;
@@ -18,7 +18,7 @@ public class Canard : MonoBehaviour
 
     private void Start()
     {
-        QuackClip = GetComponent<AudioClip>();  
+          
         QuackSource = GetComponent<AudioSource>();  
         spriteRenderer = GetComponent<SpriteRenderer>();
     }
@@ -43,13 +43,15 @@ public class Canard : MonoBehaviour
     }
     public void ShootEm()
     {
-        QuackSource.PlayOneShot(QuackClip);
+        QuackSource.Play();
+        //QuackSource.PlayOneShot(QuackClip);
         Debug.Log("ShootEm");
         this.spriteRenderer.enabled = false;
     }
     public IEnumerator CoroutineKill()
     {
-        QuackSource.PlayOneShot(QuackClip);
+        QuackSource.Play();
+        //QuackSource.PlayOneShot(QuackClip);
         yield return new WaitForSeconds(0.5f);
         gameObject.SetActive(false);    
 
