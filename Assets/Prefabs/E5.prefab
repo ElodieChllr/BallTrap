@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 5292237293812577227}
   - component: {fileID: -5716557214462317658}
   - component: {fileID: 7447209925015687699}
+  - component: {fileID: -4119439842355527391}
   m_Layer: 5
   m_Name: E5
   m_TagString: Enemy
@@ -209,3 +210,20 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   moveSpeed: 5
+--- !u!114 &-4119439842355527391
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6404625759522022900}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 757033e13035919409fe313617e668f0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  amplitude: 1
+  frequency: 1
+  inverted: 0
+  sinMovement: 1
+  otherMovement: 0

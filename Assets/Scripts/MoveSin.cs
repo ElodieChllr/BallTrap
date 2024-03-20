@@ -12,14 +12,14 @@ public class MoveSin : MonoBehaviour
     public bool inverted;
     public bool sinMovement;
     public bool otherMovement;
-    public bool bossMovement;
+    //public bool bossMovement;
 
-    public Animator animator;
+    //public Animator animator;
 
     void Start()
     {
         sinCenterX = transform.position.x;
-        animator.SetBool("IsPatternReady", false);
+        //animator.SetBool("IsPatternReady", false);
     }
 
     void Update()
@@ -37,12 +37,12 @@ public class MoveSin : MonoBehaviour
         else
             return;
 
-        if(MovementOther() == true)
-        {
-            MovementOther();
-        }
-        else
-            return;
+        //if(MovementOther() == true)
+        //{
+        //    MovementOther();
+        //}
+        //else
+        //    return;
 
         //if(BossMovement() == true)
         //{
@@ -73,15 +73,15 @@ public class MoveSin : MonoBehaviour
        return false;
     }
 
-    private bool MovementOther()
-    {
-        if(otherMovement == true)
-        {
+    //private bool MovementOther()
+    //{
+    //    if(otherMovement == true)
+    //    {
 
-            return true;
-        }
-        return false;
-    }
+    //        return true;
+    //    }
+    //    return false;
+    //}
 
     //private bool BossMovement()
     //{
