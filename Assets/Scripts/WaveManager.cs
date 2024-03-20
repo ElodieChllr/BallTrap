@@ -112,15 +112,15 @@ public class WaveManager : MonoBehaviour
     bool EnemyIsAlive()
     {
         searchCountDown -= Time.deltaTime;
-        //if (searchCountDown <= 0f)
-        //{
-        //    searchCountDown = 1f;
-        //    if (GameObject.FindGameObjectsWithTag("Enemy").Length == 0)
-        //    {
-        //        Debug.Log("Alldead");
-        //        return false;
-        //    }
-        //}
+        if (searchCountDown <= 0f)
+        {
+            searchCountDown = 0.5f;
+            if (GameObject.FindGameObjectsWithTag("Enemy").Length == GameObject.FindGameObjectsWithTag("Enemy").Length)
+            {
+                Debug.Log("Alldead");
+                return false;
+            }
+        }
         return true;
     }
 

@@ -390,7 +390,7 @@ MonoBehaviour:
   m_CursorMode: 0
   m_CursorGraphic: {fileID: 176708799}
   m_CursorTransform: {fileID: 176708798}
-  m_CursorSpeed: 400
+  m_CursorSpeed: 1000
   m_ScrollSpeed: 45
   m_StickAction:
     m_UseReference: 0
@@ -1494,7 +1494,7 @@ MonoBehaviour:
   - {fileID: 1286910661}
   timeBetweenWaves: 0.2
   waveCountdown: 0
-  searchCountDown: 1
+  searchCountDown: 0.5
   state: 2
 --- !u!1001 &8943849873245675449
 PrefabInstance:
@@ -1518,7 +1518,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8698005530218634122, guid: ef5a66a5c10f7c342b36a910cbdc8637, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -1.74
+      value: -0.19
       objectReference: {fileID: 0}
     - target: {fileID: 8698005530218634122, guid: ef5a66a5c10f7c342b36a910cbdc8637, type: 3}
       propertyPath: m_LocalPosition.z
