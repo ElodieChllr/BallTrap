@@ -13,16 +13,19 @@ public class Canard : MonoBehaviour
     private Vector3 positionCible;
     private float vitesseDeplacement;
 
+    private SpriteRenderer spriteRenderer;
+
 
     private void Start()
     {
         QuackClip = GetComponent<AudioClip>();  
         QuackSource = GetComponent<AudioSource>();  
+        spriteRenderer = GetComponent<SpriteRenderer>();
     }
     private void OnMouseDown()
     {
-        scoreManager.AjouterPoints(points);
-        Debug.Log(scoreManager.scoreActuel);
+        //scoreManager.AjouterPoints(points);
+        //Debug.Log(scoreManager.scoreActuel);
 
         Destroy(gameObject);
     }
@@ -39,5 +42,6 @@ public class Canard : MonoBehaviour
     public void ShootEm()
     {
         QuackSource.PlayOneShot(QuackClip);
+        this.spriteRenderer.enabled = false;
     }
 }

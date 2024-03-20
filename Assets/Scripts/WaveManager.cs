@@ -22,13 +22,13 @@ public class WaveManager : MonoBehaviour
 
     public SpawnState state = SpawnState.COUNTING;
 
-    public GameObject LevelPanel;
+   // public GameObject LevelPanel;
 
 
     void Start()
     {
         waveCountdown = timeBetweenWaves;
-        LevelPanel.SetActive(false);
+        //LevelPanel.SetActive(false);
 
         Time.timeScale = 1f;
         if (spawnPoints.Length == 0)
@@ -112,15 +112,15 @@ public class WaveManager : MonoBehaviour
     bool EnemyIsAlive()
     {
         searchCountDown -= Time.deltaTime;
-        if (searchCountDown <= 0f)
-        {
-            searchCountDown = 1f;
-            if (GameObject.FindGameObjectsWithTag("Enemy").Length == 0)
-            {
-                Debug.Log("Alldead");
-                return false;
-            }
-        }
+        //if (searchCountDown <= 0f)
+        //{
+        //    searchCountDown = 1f;
+        //    if (GameObject.FindGameObjectsWithTag("Enemy").Length == 0)
+        //    {
+        //        Debug.Log("Alldead");
+        //        return false;
+        //    }
+        //}
         return true;
     }
 
@@ -128,7 +128,7 @@ public class WaveManager : MonoBehaviour
     public void OpenLevel()
     {
         Time.timeScale = 0f;
-        LevelPanel.SetActive(true);
+        //LevelPanel.SetActive(true);
     }
 
     /*public void CloseLevel()

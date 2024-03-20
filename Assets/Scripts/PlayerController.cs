@@ -10,17 +10,17 @@ public class PlayerController : MonoBehaviour
     public float minX = -7f;
     public float maxX = 7f;
 
-    public PlayerControls playerControls;
-    public PlayerInput playerInput;
+    //public PlayerControls playerControls;
+    //public PlayerInput playerInput;
 
-    private void OnEnable()
-    {
-        playerControls.Enable();
-    }
-    private void OnDisable()
-    {
-        playerControls.Disable();
-    }
+    //private void OnEnable()
+    //{
+    //    playerControls.Enable();
+    //}
+    //private void OnDisable()
+    //{
+    //    playerControls.Disable();
+    //}
 
     private void Start()
     {
@@ -30,8 +30,8 @@ public class PlayerController : MonoBehaviour
     void Update()
     {
 
-        //Vector3 positionSouris = Input.mousePosition;
-        Vector3 positionSouris = playerControls.PlayerMap.MoveAim.ReadValue<Vector3>();
+        Vector3 positionSouris = Input.mousePosition;
+       // Vector3 positionSouris = playerControls.PlayerMap.MoveAim.ReadValue<Vector3>();
 
 
         Vector3 positionDansLeMonde = Camera.main.ScreenToWorldPoint(positionSouris);

@@ -44,12 +44,12 @@ public class MoveSin : MonoBehaviour
         else
             return;
 
-        if(BossMovement() == true)
-        {
-            BossMovement();
-        }
-        else
-            return;
+        //if(BossMovement() == true)
+        //{
+        //    BossMovement();
+        //}
+        //else
+        //    return;
     }
 
 
@@ -83,15 +83,15 @@ public class MoveSin : MonoBehaviour
         return false;
     }
 
-    private bool BossMovement()
-    {
-        if(bossMovement == true)
-        {
-            Debug.Log("Animator marche?");
-            animator.SetTrigger("IsPatternReady");
-            Enemy.BossTirIntervalles();
-            return true;
-        }
-        return false;
-    }
+    //private bool BossMovement()
+    //{
+    //    if(bossMovement == true)
+    //    {
+    //        Debug.Log("Animator marche?");
+    //        animator.SetTrigger("IsPatternReady");
+    //        Enemy.BossTirIntervalles();
+    //        return true;
+    //    }
+    //    return false;
+    //}
 }

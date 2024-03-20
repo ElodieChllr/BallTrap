@@ -12,9 +12,9 @@ GameObject:
   - component: {fileID: 5570483918633764356}
   - component: {fileID: 7601951125011207211}
   - component: {fileID: 5292237293812577227}
-  - component: {fileID: -8911781514954946284}
+  - component: {fileID: -5716557214462317658}
   m_Layer: 0
-  m_Name: C4
+  m_Name: G5
   m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -137,9 +137,9 @@ MonoBehaviour:
   points: 10
   scoreManager: {fileID: 0}
   canardManagerRef: {fileID: 0}
-  QuackClip: {fileID: 8300000, guid: 74b99b4e65909ae40a5231d76bf10749, type: 3}
+  QuackClip: {fileID: 8300000, guid: 75e8ddffc540a1a4aa5c5188249cae7b, type: 3}
   QuackSource: {fileID: 0}
---- !u!114 &-8911781514954946284
+--- !u!114 &-5716557214462317658
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}

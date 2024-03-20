@@ -12,9 +12,10 @@ GameObject:
   - component: {fileID: 5570483918633764356}
   - component: {fileID: 7601951125011207211}
   - component: {fileID: 5292237293812577227}
-  - component: {fileID: -8911781514954946284}
+  - component: {fileID: -5716557214462317658}
+  - component: {fileID: 6703716925556511614}
   m_Layer: 0
-  m_Name: C4
+  m_Name: G4
   m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -137,9 +138,9 @@ MonoBehaviour:
   points: 10
   scoreManager: {fileID: 0}
   canardManagerRef: {fileID: 0}
-  QuackClip: {fileID: 8300000, guid: 74b99b4e65909ae40a5231d76bf10749, type: 3}
+  QuackClip: {fileID: 8300000, guid: 012314ce9f8461f4d86a25a8919d3efc, type: 3}
   QuackSource: {fileID: 0}
---- !u!114 &-8911781514954946284
+--- !u!114 &-5716557214462317658
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -162,7 +163,7 @@ MonoBehaviour:
   m_Colors:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
     m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
-    m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
+    m_PressedColor: {r: 0.1254902, g: 0.1254902, b: 0.1254902, a: 1}
     m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
     m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
     m_ColorMultiplier: 1
@@ -195,3 +196,16 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+--- !u!114 &6703716925556511614
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6404625759522022900}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c9b3b956e4843fd418c076e402c14d7b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  moveSpeed: 5
