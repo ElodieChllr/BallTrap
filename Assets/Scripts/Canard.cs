@@ -26,8 +26,10 @@ public class Canard : MonoBehaviour
     {
         //scoreManager.AjouterPoints(points);
         //Debug.Log(scoreManager.scoreActuel);
+        ShootEm();
+        StartCoroutine(CoroutineKill());
 
-        Destroy(gameObject);
+
     }
 
     public void DeplacerVersPosition()
@@ -42,6 +44,14 @@ public class Canard : MonoBehaviour
     public void ShootEm()
     {
         QuackSource.PlayOneShot(QuackClip);
+        Debug.Log("ShootEm");
         this.spriteRenderer.enabled = false;
+    }
+    public IEnumerator CoroutineKill()
+    {
+        QuackSource.PlayOneShot(QuackClip);
+        yield return new WaitForSeconds(0.5f);
+        gameObject.SetActive(false);    
+
     }
 }
