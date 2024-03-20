@@ -7,6 +7,8 @@ public class Canard : MonoBehaviour
     public int points = 10;
     public ScoreManager scoreManager;
     public CanardManager canardManagerRef;
+    public AudioClip QuackClip;
+    public AudioSource QuackSource;
 
     private Vector3 positionCible;
     private float vitesseDeplacement;
@@ -14,7 +16,8 @@ public class Canard : MonoBehaviour
 
     private void Start()
     {
-        
+        QuackClip = GetComponent<AudioClip>();  
+        QuackSource = GetComponent<AudioSource>();  
     }
     private void OnMouseDown()
     {
@@ -32,5 +35,9 @@ public class Canard : MonoBehaviour
     void Update()
     {
       
+    }
+    public void ShootEm()
+    {
+        QuackSource.PlayOneShot(QuackClip);
     }
 }
