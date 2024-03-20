@@ -35,17 +35,59 @@ public partial class @PlayerControls: IInputActionCollection2, IDisposable
                     ""processors"": """",
                     ""interactions"": """",
                     ""initialStateCheck"": false
+                },
+                {
+                    ""name"": ""MoveAim"",
+                    ""type"": ""Value"",
+                    ""id"": ""05c5a7f4-1e1e-4317-b526-59d7202176ca"",
+                    ""expectedControlType"": ""Vector3"",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": true
                 }
             ],
             ""bindings"": [
                 {
                     ""name"": """",
                     ""id"": ""a942b1c7-b825-47e3-821e-034e0aa4eef7"",
-                    ""path"": """",
+                    ""path"": ""<Mouse>/leftButton"",
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": """",
                     ""action"": ""Shoot"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""ba28f8fb-ec5c-4757-a99a-16c3a3ae8533"",
+                    ""path"": ""<Gamepad>/rightTrigger"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Shoot"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""06b5aab2-a5b8-4726-bbdc-2a439c2c015f"",
+                    ""path"": ""<Mouse>/delta"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""MoveAim"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""10a77d0d-0690-46c2-a5c6-197c8898ddab"",
+                    ""path"": ""<Gamepad>/rightStick"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""MoveAim"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
                 }
@@ -57,6 +99,7 @@ public partial class @PlayerControls: IInputActionCollection2, IDisposable
         // PlayerMap
         m_PlayerMap = asset.FindActionMap("PlayerMap", throwIfNotFound: true);
         m_PlayerMap_Shoot = m_PlayerMap.FindAction("Shoot", throwIfNotFound: true);
+        m_PlayerMap_MoveAim = m_PlayerMap.FindAction("MoveAim", throwIfNotFound: true);
     }
 
     public void Dispose()
@@ -119,11 +162,13 @@ public partial class @PlayerControls: IInputActionCollection2, IDisposable
     private readonly InputActionMap m_PlayerMap;
     private List<IPlayerMapActions> m_PlayerMapActionsCallbackInterfaces = new List<IPlayerMapActions>();
     private readonly InputAction m_PlayerMap_Shoot;
+    private readonly InputAction m_PlayerMap_MoveAim;
     public struct PlayerMapActions
     {
         private @PlayerControls m_Wrapper;
         public PlayerMapActions(@PlayerControls wrapper) { m_Wrapper = wrapper; }
         public InputAction @Shoot => m_Wrapper.m_PlayerMap_Shoot;
+        public InputAction @MoveAim => m_Wrapper.m_PlayerMap_MoveAim;
         public InputActionMap Get() { return m_Wrapper.m_PlayerMap; }
         public void Enable() { Get().Enable(); }
         public void Disable() { Get().Disable(); }
@@ -136,6 +181,9 @@ public partial class @PlayerControls: IInputActionCollection2, IDisposable
             @Shoot.started += instance.OnShoot;
             @Shoot.performed += instance.OnShoot;
             @Shoot.canceled += instance.OnShoot;
+            @MoveAim.started += instance.OnMoveAim;
+            @MoveAim.performed += instance.OnMoveAim;
+            @MoveAim.canceled += instance.OnMoveAim;
         }
 
         private void UnregisterCallbacks(IPlayerMapActions instance)
@@ -143,6 +191,9 @@ public partial class @PlayerControls: IInputActionCollection2, IDisposable
             @Shoot.started -= instance.OnShoot;
             @Shoot.performed -= instance.OnShoot;
             @Shoot.canceled -= instance.OnShoot;
+            @MoveAim.started -= instance.OnMoveAim;
+            @MoveAim.performed -= instance.OnMoveAim;
+            @MoveAim.canceled -= instance.OnMoveAim;
         }
 
         public void RemoveCallbacks(IPlayerMapActions instance)
@@ -163,5 +214,6 @@ public partial class @PlayerControls: IInputActionCollection2, IDisposable
     public interface IPlayerMapActions
     {
         void OnShoot(InputAction.CallbackContext context);
+        void OnMoveAim(InputAction.CallbackContext context);
     }
 }
