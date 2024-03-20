@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 5292237293812577227}
   - component: {fileID: 7447209925015687699}
   - component: {fileID: -4119439842355527391}
+  - component: {fileID: -3955948746425196936}
   m_Layer: 5
   m_Name: E5
   m_TagString: Enemy
@@ -33,8 +34,7 @@ Transform:
   m_LocalPosition: {x: -0.05333724, y: 2.33, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 6012208846071542157}
+  m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &5570483918633764356
@@ -140,7 +140,7 @@ MonoBehaviour:
   scoreManager: {fileID: 0}
   canardManagerRef: {fileID: 0}
   QuackClip: {fileID: 8300000, guid: ad907c988778ed54093bbdcbb42ac221, type: 3}
-  QuackSource: {fileID: 1265714112995818702}
+  QuackSource: {fileID: -3955948746425196936}
 --- !u!114 &7447209925015687699
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -171,45 +171,13 @@ MonoBehaviour:
   inverted: 0
   sinMovement: 1
   otherMovement: 0
---- !u!1 &7904567872462003104
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 6012208846071542157}
-  - component: {fileID: 1265714112995818702}
-  m_Layer: 0
-  m_Name: Audio Source
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &6012208846071542157
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7904567872462003104}
-  serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.000000022351742, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 8698005530218634122}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!82 &1265714112995818702
+--- !u!82 &-3955948746425196936
 AudioSource:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7904567872462003104}
+  m_GameObject: {fileID: 6404625759522022900}
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}

@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 5292237293812577227}
   - component: {fileID: 6703716925556511614}
   - component: {fileID: -1150126111854144505}
+  - component: {fileID: 3183836907496693771}
   m_Layer: 5
   m_Name: G4
   m_TagString: Enemy
@@ -33,8 +34,7 @@ Transform:
   m_LocalPosition: {x: -0.05333724, y: 2.33, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 3728593791044474948}
+  m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &5570483918633764356
@@ -140,7 +140,7 @@ MonoBehaviour:
   scoreManager: {fileID: 0}
   canardManagerRef: {fileID: 0}
   QuackClip: {fileID: 8300000, guid: 012314ce9f8461f4d86a25a8919d3efc, type: 3}
-  QuackSource: {fileID: 3872970447826210935}
+  QuackSource: {fileID: 3183836907496693771}
 --- !u!114 &6703716925556511614
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -171,45 +171,13 @@ MonoBehaviour:
   inverted: 0
   sinMovement: 1
   otherMovement: 0
---- !u!1 &8404106074369924708
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 3728593791044474948}
-  - component: {fileID: 3872970447826210935}
-  m_Layer: 0
-  m_Name: Audio Source
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &3728593791044474948
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8404106074369924708}
-  serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.000000022351742, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 8698005530218634122}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!82 &3872970447826210935
+--- !u!82 &3183836907496693771
 AudioSource:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8404106074369924708}
+  m_GameObject: {fileID: 6404625759522022900}
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
