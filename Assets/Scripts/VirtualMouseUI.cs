@@ -18,6 +18,7 @@ public class VirtualMouseUI : MonoBehaviour
     {
         transform.localScale = Vector3.one * (1f / canvasRectTransform.localScale.x);
         transform.SetAsLastSibling();
+        ShootController();
     }
 
     private void LateUpdate()
@@ -26,5 +27,17 @@ public class VirtualMouseUI : MonoBehaviour
         virtualMousePosition.x = Mathf.Clamp(virtualMousePosition.x, 0f, Screen.width);
         virtualMousePosition.y = Mathf.Clamp(virtualMousePosition.y, 0f, Screen.height);
         InputState.Change(virtualMouseInput.virtualMouse.position, virtualMousePosition);
+    }
+
+    public bool ShootController()
+    {
+        if (virtualMouseInput.virtualMouse.leftButton.isPressed)
+        {
+            Debug.Log("SHOOOT");
+            return true;
+        }
+        else
+            return false;
+
     }
 }

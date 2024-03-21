@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.InputSystem;
+using UnityEngine.InputSystem.UI;
 
 public class PlayerController : MonoBehaviour
 {
@@ -9,6 +10,8 @@ public class PlayerController : MonoBehaviour
 
     public float minX = -7f;
     public float maxX = 7f;
+
+    private VirtualMouseUI virtualMouse;
 
     //public PlayerControls playerControls;
     //public PlayerInput playerInput;
@@ -46,7 +49,6 @@ public class PlayerController : MonoBehaviour
 
         transform.position = Vector3.Lerp(transform.position, positionDansLeMonde, vitesseDeSuivi * Time.deltaTime);
     }
-
 
 
 }

@@ -1,6 +1,8 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
+using UnityEngine.InputSystem.UI;
 
 public class Canard : MonoBehaviour
 {
@@ -14,22 +16,39 @@ public class Canard : MonoBehaviour
     private float vitesseDeplacement;
 
     private SpriteRenderer spriteRenderer;
-
+    private VirtualMouseUI virtualMouseUI;
+   
 
     private void Start()
     {
-          
         QuackSource = GetComponent<AudioSource>();  
         spriteRenderer = GetComponent<SpriteRenderer>();
     }
-    private void OnMouseDown()
+    void Update()
     {
-        //scoreManager.AjouterPoints(points);
-        //Debug.Log(scoreManager.scoreActuel);
-        ShootEm();
-        StartCoroutine(CoroutineKill());
+        OnShootCanard();
+    }
 
 
+    //private void OnMouseDown()
+    //{
+    //    //scoreManager.AjouterPoints(points);
+    //    //Debug.Log(scoreManager.scoreActuel);
+    //    ShootEm();
+    //    StartCoroutine(CoroutineKill());
+
+
+    //}
+
+    private void OnShootCanard()
+    {
+        if (virtualMouseUI.ShootController())
+        {
+            ShootEm();
+            StartCoroutine(CoroutineKill());
+        }
+        else
+            Debug.Log("noShoot");
     }
 
     public void DeplacerVersPosition()
@@ -37,10 +56,7 @@ public class Canard : MonoBehaviour
         
     }
 
-    void Update()
-    {
-      
-    }
+    
     public void ShootEm()
     {
         QuackSource.Play();
