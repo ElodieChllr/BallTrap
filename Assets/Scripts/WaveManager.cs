@@ -19,6 +19,7 @@ public class WaveManager : MonoBehaviour
     public float waveCountdown;
 
     public float searchCountDown = 1f;
+    public GameObject EndPanel;
 
     public SpawnState state = SpawnState.COUNTING;
 
@@ -127,6 +128,7 @@ public class WaveManager : MonoBehaviour
 
     public void OpenLevel()
     {
+        EndPanel.SetActive(true);
         Time.timeScale = 0f;
         //LevelPanel.SetActive(true);
     }
