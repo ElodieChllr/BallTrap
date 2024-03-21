@@ -17,12 +17,15 @@ public class Canard : MonoBehaviour
 
     private SpriteRenderer spriteRenderer;
     private VirtualMouseUI virtualMouseUI;
+
+    private Animator shakeCamAnim;
    
 
     private void Start()
     {
         QuackSource = GetComponent<AudioSource>();  
         spriteRenderer = GetComponent<SpriteRenderer>();
+        shakeCamAnim = GameObject.FindWithTag("MainCamera").GetComponent<Animator>();
     }
     void Update()
     {
@@ -34,6 +37,7 @@ public class Canard : MonoBehaviour
     {
         //scoreManager.AjouterPoints(points);
         //Debug.Log(scoreManager.scoreActuel);
+        //shakeCamAnim.SetTrigger("ShakeCam");
         ShootEm();
         StartCoroutine(CoroutineKill());
 
@@ -59,6 +63,7 @@ public class Canard : MonoBehaviour
     
     public void ShootEm()
     {
+        shakeCamAnim.SetTrigger("ShakeCam");
         QuackSource.Play();
         //QuackSource.PlayOneShot(QuackClip);
         Debug.Log("ShootEm");

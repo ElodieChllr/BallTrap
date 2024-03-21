@@ -44,20 +44,36 @@ public class PauseManager : MonoBehaviour
 
     void OpenPause()
     {
+        Debug.Log("open");
         Time.timeScale = 0f;
         pnl_Pause.SetActive(true);
-
     }
 
     public void ClosePause()
     {
-        Time.timeScale = 1f;
         pnl_Pause.SetActive(false);
+        Debug.Log("close");
+        CloseSettings();
+        Time.timeScale = 1f;
+
     }
 
 
     public void OpenSettings()
     {
+        StartCoroutine(AnimSettings());
+    }
+
+    public void CloseSettings()
+    {
+        settingsAnimator.SetTrigger("closeSettings");
+    }
+
+    IEnumerator AnimSettings()
+    {
         settingsAnimator.SetTrigger("openSettings");
+        yield return new WaitForSeconds(1f);
+        settingsAnimator.SetTrigger("idleSettings");
+
     }
 }
