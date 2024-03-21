@@ -138,6 +138,7 @@ MonoBehaviour:
   points: 10
   scoreManager: {fileID: 0}
   canardManagerRef: {fileID: 0}
+  QuackSource: {fileID: 0}
 --- !u!198 &9080375400108176501
 ParticleSystem:
   m_ObjectHideFlags: 0
