@@ -4902,52 +4902,52 @@ MonoBehaviour:
   - name: A4
     enemy: {fileID: 8698005530218634122, guid: 79f136493ccefd94a9faa96a61288a36, type: 3}
     count: 1
-    rate: 1
+    rate: 0.5
   - name: E5
     enemy: {fileID: 8698005530218634122, guid: 55f1ef5957dc4e147867c311afbaf731, type: 3}
     count: 2
-    rate: 1
+    rate: 0.5
   - name: D5
     enemy: {fileID: 8698005530218634122, guid: b31f59d2887db25459043b9cd8793ff8, type: 3}
     count: 1
-    rate: 1
+    rate: 0.5
   - name: G4
     enemy: {fileID: 8698005530218634122, guid: e6a21582d74da794d88b55cbc81b2dd4, type: 3}
     count: 1
-    rate: 1
+    rate: 0.5
   - name: A4
     enemy: {fileID: 8698005530218634122, guid: 79f136493ccefd94a9faa96a61288a36, type: 3}
     count: 1
-    rate: 1
+    rate: 0.5
   - name: C5
     enemy: {fileID: 8698005530218634122, guid: 53ce49cf813f2784985362ef2dc95ba5, type: 3}
     count: 1
-    rate: 1
+    rate: 0.5
   - name: A4
     enemy: {fileID: 8698005530218634122, guid: 79f136493ccefd94a9faa96a61288a36, type: 3}
     count: 1
-    rate: 1
+    rate: 0.5
   - name: G5
     enemy: {fileID: 8698005530218634122, guid: 4c973c40e086acf44b3a4ab6a197ee15, type: 3}
     count: 1
-    rate: 1
+    rate: 0.5
   - name: B4
     enemy: {fileID: 8698005530218634122, guid: f61e60e91f6f66d4b85a96008205e879, type: 3}
     count: 1
-    rate: 1
+    rate: 0.5
   - name: C5
     enemy: {fileID: 8698005530218634122, guid: 53ce49cf813f2784985362ef2dc95ba5, type: 3}
     count: 1
-    rate: 1
+    rate: 0.5
   nextWave: 0
   spawnPoints:
   - {fileID: 307045008}
   - {fileID: 1631075066}
   - {fileID: 1294093538}
   - {fileID: 1286910661}
-  timeBetweenWaves: 0.2
+  timeBetweenWaves: 0.075
   waveCountdown: 0
-  searchCountDown: 0.5
+  searchCountDown: 0.05
   EndPanel: {fileID: 1621588892}
   state: 2
 --- !u!1001 &8943849873245675449

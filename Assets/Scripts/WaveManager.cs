@@ -15,10 +15,10 @@ public class WaveManager : MonoBehaviour
 
     public Transform[] spawnPoints;
 
-    public float timeBetweenWaves = 2f;
+    public float timeBetweenWaves = 0.075f;
     public float waveCountdown;
 
-    public float searchCountDown = 1f;
+    public float searchCountDown = 0.05f;
     public GameObject EndPanel;
 
     public SpawnState state = SpawnState.COUNTING;
@@ -115,7 +115,7 @@ public class WaveManager : MonoBehaviour
         searchCountDown -= Time.deltaTime;
         if (searchCountDown <= 0f)
         {
-            searchCountDown = 0.5f;
+            searchCountDown = 0.05f;
             if (GameObject.FindGameObjectsWithTag("Enemy").Length == GameObject.FindGameObjectsWithTag("Enemy").Length)
             {
                // Debug.Log("Alldead");
@@ -145,5 +145,5 @@ public class Wave
     public string name;
     public Transform enemy;
     public int count;
-    public float rate;
+    public float rate = 0.02f;
 }
