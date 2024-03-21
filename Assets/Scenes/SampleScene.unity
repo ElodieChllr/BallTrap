@@ -657,7 +657,7 @@ MonoBehaviour:
       m_Interactions: 
       m_SingletonActionBindings:
       - m_Name: 
-        m_Id: 342670b7-34b9-4ac5-b30a-9a48e90c4927
+        m_Id: c6e3af9d-a0f3-4c5b-9995-1b654b80cc1e
         m_Path: <Gamepad>/rightTrigger
         m_Interactions: 
         m_Processors: 
@@ -3045,13 +3045,17 @@ PrefabInstance:
       propertyPath: scoreManager
       value: 
       objectReference: {fileID: 1280632359}
+    - target: {fileID: 5292237293812577227, guid: ef5a66a5c10f7c342b36a910cbdc8637, type: 3}
+      propertyPath: virtualMouseInput
+      value: 
+      objectReference: {fileID: 306784429}
     - target: {fileID: 6404625759522022900, guid: ef5a66a5c10f7c342b36a910cbdc8637, type: 3}
       propertyPath: m_Name
       value: Canard
       objectReference: {fileID: 0}
     - target: {fileID: 8698005530218634122, guid: ef5a66a5c10f7c342b36a910cbdc8637, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 11.22
+      value: 12.89
       objectReference: {fileID: 0}
     - target: {fileID: 8698005530218634122, guid: ef5a66a5c10f7c342b36a910cbdc8637, type: 3}
       propertyPath: m_LocalPosition.y
