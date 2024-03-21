@@ -20,7 +20,7 @@ public class WaveManager : MonoBehaviour
 
     public float searchCountDown = 0.05f;
     public GameObject EndPanel;
-
+    public bool ok;
     public SpawnState state = SpawnState.COUNTING;
 
    // public GameObject LevelPanel;
@@ -28,6 +28,9 @@ public class WaveManager : MonoBehaviour
 
     void Start()
     {
+        ok = false;
+        StartCoroutine(WaitBeforeWave());
+
         waveCountdown = timeBetweenWaves;
         //LevelPanel.SetActive(false);
 
@@ -41,34 +44,39 @@ public class WaveManager : MonoBehaviour
 
     void Update()
     {
-
-        if(state == SpawnState.WAITING)
+        if (ok == true)
         {
-            if (EnemyIsAlive() == false)
+
+            if (state == SpawnState.WAITING)
             {
-                WaveCompleted();
+                if (EnemyIsAlive() == false)
+                {
+                    WaveCompleted();
+                }
+                else
+                {
+                    return;
+                }
+            }
+
+            if (waveCountdown <= 0)
+            {
+                if (state != SpawnState.SPAWNING)
+                {
+                    StartCoroutine(SpawnWave(waves[nextWave]));
+                }
             }
             else
             {
-                return;
+                waveCountdown -= Time.deltaTime;
             }
-        }
-
-        if (waveCountdown <= 0)
-        {
-            if(state != SpawnState.SPAWNING)
-            {
-                StartCoroutine(SpawnWave(waves[nextWave]));
-            }
-        }
-        else
-        {
-            waveCountdown -= Time.deltaTime;
         }
     }
 
     IEnumerator SpawnWave(Wave _wave)
     {
+        
+
         state = SpawnState.SPAWNING;
         
         for(int i = 0; i < _wave.count; i++)
@@ -137,6 +145,14 @@ public class WaveManager : MonoBehaviour
     {
         LevelPanel.SetActive(false);
     }*/
+
+
+    public IEnumerator WaitBeforeWave()
+    {
+        yield return new WaitForSeconds(6f);
+        ok = true;
+
+    }
 }
 
 [System.Serializable]
