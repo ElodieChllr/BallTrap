@@ -22,12 +22,14 @@ public class PlayerController : MonoBehaviour
     InputAction moveAction;
 
     private Canard canardRef;
+
+
+    
    
     private void Awake()
     {
         moveAction = playerInput.actions["MoveAim"];
         playerControls = GetComponent<PlayerInput>();
-
     }
     private void Start()
     {
@@ -60,7 +62,11 @@ public class PlayerController : MonoBehaviour
         Vector2 movement = moveAction.ReadValue<Vector2>();
         Vector2 move = new Vector2(movement.x, movement.y);
         rb2D.velocity = new Vector2(move.x * speedMove, move.y * speedMove);
+
+        
     }
+
+   
     //private void Move()
     //{
     //    Vector2 movement = moveAction.ReadValue<Vector2>();
