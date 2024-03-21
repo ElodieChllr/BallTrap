@@ -30,15 +30,15 @@ public class Canard : MonoBehaviour
     }
 
 
-    //private void OnMouseDown()
-    //{
-    //    //scoreManager.AjouterPoints(points);
-    //    //Debug.Log(scoreManager.scoreActuel);
-    //    ShootEm();
-    //    StartCoroutine(CoroutineKill());
+    private void OnMouseDown()
+    {
+        //scoreManager.AjouterPoints(points);
+        //Debug.Log(scoreManager.scoreActuel);
+        ShootEm();
+        StartCoroutine(CoroutineKill());
 
 
-    //}
+    }
 
     private void OnShootCanard()
     {
