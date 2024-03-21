@@ -26,6 +26,8 @@ public class Canard : MonoBehaviour
 
     private PlayerInput playerInputRef;
     public GameObject player;
+
+    public ParticleSystem particleSystemRef;
    
 
     private void Start()
@@ -94,6 +96,7 @@ public class Canard : MonoBehaviour
 
     public void ShootEm()
     {
+        particleSystemRef.Play();
         this._collider2D.enabled = false;
         QuackSource.Play();
         explosionQuack.Play();
