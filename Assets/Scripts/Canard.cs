@@ -13,6 +13,7 @@ public class Canard : MonoBehaviour
     public CanardManager canardManagerRef;
     //public AudioClip QuackClip;
     public AudioSource QuackSource;
+    public AudioSource explosionQuack;
 
     private Vector3 positionCible;
     private float vitesseDeplacement;
@@ -95,6 +96,7 @@ public class Canard : MonoBehaviour
     {
         this._collider2D.enabled = false;
         QuackSource.Play();
+        explosionQuack.Play();
         Debug.Log("ShootEm");
         this.spriteRenderer.enabled = false;
         this._collider2D.enabled = false;
@@ -102,6 +104,7 @@ public class Canard : MonoBehaviour
     public IEnumerator CoroutineKill()
     {
         QuackSource.Play();
+        explosionQuack.Play();
         //QuackSource.PlayOneShot(QuackClip);
         yield return new WaitForSeconds(0.5f);
         gameObject.SetActive(false);    
