@@ -29,7 +29,7 @@ public class WaveManager : MonoBehaviour
     void Start()
     {
       
-        StartCoroutine(WaitBeforeWave());
+        
 
         waveCountdown = timeBetweenWaves;
         //LevelPanel.SetActive(false);
@@ -146,12 +146,7 @@ public class WaveManager : MonoBehaviour
     }*/
 
 
-    public IEnumerator WaitBeforeWave()
-    {
-        yield return new WaitForSeconds(6f);
-        
 
-    }
 }
 
 [System.Serializable]

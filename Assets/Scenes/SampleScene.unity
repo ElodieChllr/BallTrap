@@ -4933,7 +4933,7 @@ Transform:
   m_GameObject: {fileID: 2081978974}
   serializedVersion: 2
   m_LocalRotation: {x: 0.0015094761, y: -0.5196965, z: 0.0024814778, w: 0.8543461}
-  m_LocalPosition: {x: 0.79262334, y: -5.450508, z: -0.1747122}
+  m_LocalPosition: {x: 0.02, y: -5.18, z: -2.06}
   m_LocalScale: {x: 2.3769, y: 2.3769, z: 2.3769}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -5158,1003 +5158,1003 @@ MonoBehaviour:
   - name: C5
     enemy: {fileID: 8698005530218634122, guid: 53ce49cf813f2784985362ef2dc95ba5, type: 3}
     count: 1
-    rate: 0
+    rate: 1
   - name: D5
     enemy: {fileID: 8698005530218634122, guid: b31f59d2887db25459043b9cd8793ff8, type: 3}
     count: 1
-    rate: 0
+    rate: 1
   - name: G4
     enemy: {fileID: 8698005530218634122, guid: e6a21582d74da794d88b55cbc81b2dd4, type: 3}
     count: 1
-    rate: 0
+    rate: 1
   - name: D5
     enemy: {fileID: 8698005530218634122, guid: b31f59d2887db25459043b9cd8793ff8, type: 3}
     count: 1
-    rate: 0
+    rate: 1
   - name: E5
     enemy: {fileID: 8698005530218634122, guid: 55f1ef5957dc4e147867c311afbaf731, type: 3}
     count: 1
-    rate: 0
+    rate: 1
   - name: G5
     enemy: {fileID: 8698005530218634122, guid: 4c973c40e086acf44b3a4ab6a197ee15, type: 3}
     count: 1
-    rate: 0
+    rate: 1
   - name: E5
     enemy: {fileID: 8698005530218634122, guid: 55f1ef5957dc4e147867c311afbaf731, type: 3}
     count: 1
-    rate: 0
+    rate: 1
   - name: F5
     enemy: {fileID: 8698005530218634122, guid: 460771aa94cfa414b87b22f38d98d5ac, type: 3}
     count: 1
-    rate: 0
+    rate: 1
   - name: D5
     enemy: {fileID: 8698005530218634122, guid: b31f59d2887db25459043b9cd8793ff8, type: 3}
     count: 1
-    rate: 0
+    rate: 1
   - name: C5
     enemy: {fileID: 8698005530218634122, guid: 53ce49cf813f2784985362ef2dc95ba5, type: 3}
     count: 1
-    rate: 0
+    rate: 1
   - name: G4
     enemy: {fileID: 8698005530218634122, guid: e6a21582d74da794d88b55cbc81b2dd4, type: 3}
     count: 3
-    rate: 0
+    rate: 1
   - name: A4
     enemy: {fileID: 8698005530218634122, guid: 79f136493ccefd94a9faa96a61288a36, type: 3}
     count: 1
-    rate: 0
+    rate: 1
   - name: C5
     enemy: {fileID: 8698005530218634122, guid: 53ce49cf813f2784985362ef2dc95ba5, type: 3}
     count: 3
-    rate: 0
+    rate: 1
   - name: D5
     enemy: {fileID: 8698005530218634122, guid: b31f59d2887db25459043b9cd8793ff8, type: 3}
     count: 1
-    rate: 0
+    rate: 1
   - name: G4
     enemy: {fileID: 8698005530218634122, guid: e6a21582d74da794d88b55cbc81b2dd4, type: 3}
     count: 1
-    rate: 0
+    rate: 1
   - name: D5
     enemy: {fileID: 8698005530218634122, guid: b31f59d2887db25459043b9cd8793ff8, type: 3}
     count: 1
-    rate: 0
+    rate: 1
   - name: E5
     enemy: {fileID: 8698005530218634122, guid: 55f1ef5957dc4e147867c311afbaf731, type: 3}
     count: 1
-    rate: 0
+    rate: 1
   - name: G5
     enemy: {fileID: 8698005530218634122, guid: 4c973c40e086acf44b3a4ab6a197ee15, type: 3}
     count: 1
-    rate: 0
+    rate: 1
   - name: F5
     enemy: {fileID: 8698005530218634122, guid: 460771aa94cfa414b87b22f38d98d5ac, type: 3}
     count: 1
-    rate: 0
+    rate: 1
   - name: E5
     enemy: {fileID: 8698005530218634122, guid: 55f1ef5957dc4e147867c311afbaf731, type: 3}
     count: 1
-    rate: 0
+    rate: 1
   - name: C5
     enemy: {fileID: 8698005530218634122, guid: 53ce49cf813f2784985362ef2dc95ba5, type: 3}
     count: 1
-    rate: 0
+    rate: 1
   - name: D5
     enemy: {fileID: 8698005530218634122, guid: b31f59d2887db25459043b9cd8793ff8, type: 3}
     count: 1
-    rate: 0
+    rate: 1
   - name: G4
     enemy: {fileID: 8698005530218634122, guid: e6a21582d74da794d88b55cbc81b2dd4, type: 3}
     count: 1
-    rate: 0
+    rate: 1
   - name: B4
     enemy: {fileID: 8698005530218634122, guid: f61e60e91f6f66d4b85a96008205e879, type: 3}
     count: 1
-    rate: 0
+    rate: 1
   - name: C5
     enemy: {fileID: 8698005530218634122, guid: 53ce49cf813f2784985362ef2dc95ba5, type: 3}
     count: 4
-    rate: 0
+    rate: 1
   - name: A4
     enemy: {fileID: 8698005530218634122, guid: 79f136493ccefd94a9faa96a61288a36, type: 3}
     count: 1
-    rate: 0
+    rate: 1
   - name: B4
     enemy: {fileID: 8698005530218634122, guid: f61e60e91f6f66d4b85a96008205e879, type: 3}
     count: 1
-    rate: 0
+    rate: 1
   - name: C5
     enemy: {fileID: 8698005530218634122, guid: 53ce49cf813f2784985362ef2dc95ba5, type: 3}
     count: 2
-    rate: 0
+    rate: 1
   - name: D5
     enemy: {fileID: 8698005530218634122, guid: b31f59d2887db25459043b9cd8793ff8, type: 3}
     count: 1
-    rate: 0
+    rate: 1
   - name: B4
     enemy: {fileID: 8698005530218634122, guid: f61e60e91f6f66d4b85a96008205e879, type: 3}
     count: 1
-    rate: 0
+    rate: 1
   - name: A4
     enemy: {fileID: 8698005530218634122, guid: 79f136493ccefd94a9faa96a61288a36, type: 3}
     count: 1
-    rate: 0
+    rate: 1
   - name: G4
     enemy: {fileID: 8698005530218634122, guid: e6a21582d74da794d88b55cbc81b2dd4, type: 3}
     count: 1
-    rate: 0
+    rate: 1
   - name: A4
     enemy: {fileID: 8698005530218634122, guid: 79f136493ccefd94a9faa96a61288a36, type: 3}
     count: 2
-    rate: 0
+    rate: 1
   - name: B4
     enemy: {fileID: 8698005530218634122, guid: f61e60e91f6f66d4b85a96008205e879, type: 3}
     count: 1
-    rate: 0
+    rate: 1
   - name: C5
     enemy: {fileID: 8698005530218634122, guid: 53ce49cf813f2784985362ef2dc95ba5, type: 3}
     count: 1
-    rate: 0
+    rate: 1
   - name: A4
     enemy: {fileID: 8698005530218634122, guid: 79f136493ccefd94a9faa96a61288a36, type: 3}
     count: 1
-    rate: 0
+    rate: 1
   - name: G4
     enemy: {fileID: 8698005530218634122, guid: e6a21582d74da794d88b55cbc81b2dd4, type: 3}
     count: 1
-    rate: 0
+    rate: 1
   - name: G5
     enemy: {fileID: 8698005530218634122, guid: 4c973c40e086acf44b3a4ab6a197ee15, type: 3}
     count: 2
-    rate: 0
+    rate: 1
   - name: D5
     enemy: {fileID: 8698005530218634122, guid: b31f59d2887db25459043b9cd8793ff8, type: 3}
     count: 1
-    rate: 0
+    rate: 1
   - name: G5
     enemy: {fileID: 8698005530218634122, guid: 4c973c40e086acf44b3a4ab6a197ee15, type: 3}
     count: 1
-    rate: 0
+    rate: 1
   - name: D5
     enemy: {fileID: 8698005530218634122, guid: b31f59d2887db25459043b9cd8793ff8, type: 3}
     count: 1
-    rate: 0
+    rate: 1
   - name: G5
     enemy: {fileID: 8698005530218634122, guid: 4c973c40e086acf44b3a4ab6a197ee15, type: 3}
     count: 1
-    rate: 0
+    rate: 1
   - name: D5
     enemy: {fileID: 8698005530218634122, guid: b31f59d2887db25459043b9cd8793ff8, type: 3}
     count: 1
-    rate: 0
+    rate: 1
   - name: A4
     enemy: {fileID: 8698005530218634122, guid: 79f136493ccefd94a9faa96a61288a36, type: 3}
     count: 2
-    rate: 0
+    rate: 1
   - name: B4
     enemy: {fileID: 8698005530218634122, guid: f61e60e91f6f66d4b85a96008205e879, type: 3}
     count: 1
-    rate: 0
+    rate: 1
   - name: C5
     enemy: {fileID: 8698005530218634122, guid: 53ce49cf813f2784985362ef2dc95ba5, type: 3}
     count: 1
-    rate: 0
+    rate: 1
   - name: A4
     enemy: {fileID: 8698005530218634122, guid: 79f136493ccefd94a9faa96a61288a36, type: 3}
     count: 1
-    rate: 0
+    rate: 1
   - name: C5
     enemy: {fileID: 8698005530218634122, guid: 53ce49cf813f2784985362ef2dc95ba5, type: 3}
     count: 1
-    rate: 0
+    rate: 1
   - name: D5
     enemy: {fileID: 8698005530218634122, guid: b31f59d2887db25459043b9cd8793ff8, type: 3}
     count: 1
-    rate: 0
+    rate: 1
   - name: B4
     enemy: {fileID: 8698005530218634122, guid: f61e60e91f6f66d4b85a96008205e879, type: 3}
     count: 1
-    rate: 0
+    rate: 1
   - name: A4
     enemy: {fileID: 8698005530218634122, guid: 79f136493ccefd94a9faa96a61288a36, type: 3}
     count: 1
-    rate: 0
+    rate: 1
   - name: G4
     enemy: {fileID: 8698005530218634122, guid: e6a21582d74da794d88b55cbc81b2dd4, type: 3}
     count: 1
-    rate: 0
+    rate: 1
   - name: A4
     enemy: {fileID: 8698005530218634122, guid: 79f136493ccefd94a9faa96a61288a36, type: 3}
     count: 2
-    rate: 0
+    rate: 1
   - name: B4
     enemy: {fileID: 8698005530218634122, guid: f61e60e91f6f66d4b85a96008205e879, type: 3}
     count: 1
-    rate: 0
+    rate: 1
   - name: C5
     enemy: {fileID: 8698005530218634122, guid: 53ce49cf813f2784985362ef2dc95ba5, type: 3}
     count: 1
-    rate: 0
+    rate: 1
   - name: A4
     enemy: {fileID: 8698005530218634122, guid: 79f136493ccefd94a9faa96a61288a36, type: 3}
     count: 1
-    rate: 0
+    rate: 1
   - name: G4
     enemy: {fileID: 8698005530218634122, guid: e6a21582d74da794d88b55cbc81b2dd4, type: 3}
     count: 1
-    rate: 0
+    rate: 1
   - name: D5
     enemy: {fileID: 8698005530218634122, guid: b31f59d2887db25459043b9cd8793ff8, type: 3}
     count: 3
-    rate: 0
+    rate: 1
   - name: E5
     enemy: {fileID: 8698005530218634122, guid: 55f1ef5957dc4e147867c311afbaf731, type: 3}
     count: 1
-    rate: 0
+    rate: 1
   - name: D5
     enemy: {fileID: 8698005530218634122, guid: b31f59d2887db25459043b9cd8793ff8, type: 3}
     count: 1
-    rate: 0
+    rate: 1
   - name: C5
     enemy: {fileID: 8698005530218634122, guid: 53ce49cf813f2784985362ef2dc95ba5, type: 3}
     count: 1
-    rate: 0
+    rate: 1
   - name: D5
     enemy: {fileID: 8698005530218634122, guid: b31f59d2887db25459043b9cd8793ff8, type: 3}
     count: 1
-    rate: 0
+    rate: 1
   - name: E5
     enemy: {fileID: 8698005530218634122, guid: 55f1ef5957dc4e147867c311afbaf731, type: 3}
     count: 1
-    rate: 0
+    rate: 1
   - name: C5
     enemy: {fileID: 8698005530218634122, guid: 53ce49cf813f2784985362ef2dc95ba5, type: 3}
     count: 1
-    rate: 0
+    rate: 1
   - name: D5
     enemy: {fileID: 8698005530218634122, guid: b31f59d2887db25459043b9cd8793ff8, type: 3}
     count: 3
-    rate: 0
+    rate: 1
   - name: E5
     enemy: {fileID: 8698005530218634122, guid: 55f1ef5957dc4e147867c311afbaf731, type: 3}
     count: 1
-    rate: 0
+    rate: 1
   - name: D5
     enemy: {fileID: 8698005530218634122, guid: b31f59d2887db25459043b9cd8793ff8, type: 3}
     count: 1
-    rate: 0
+    rate: 1
   - name: G4
     enemy: {fileID: 8698005530218634122, guid: e6a21582d74da794d88b55cbc81b2dd4, type: 3}
     count: 1
-    rate: 0
+    rate: 1
   - name: A4
     enemy: {fileID: 8698005530218634122, guid: 79f136493ccefd94a9faa96a61288a36, type: 3}
     count: 1
-    rate: 0
+    rate: 1
   - name: B4
     enemy: {fileID: 8698005530218634122, guid: f61e60e91f6f66d4b85a96008205e879, type: 3}
     count: 1
-    rate: 0
+    rate: 1
   - name: C5
     enemy: {fileID: 8698005530218634122, guid: 53ce49cf813f2784985362ef2dc95ba5, type: 3}
     count: 1
-    rate: 0
+    rate: 1
   - name: A4
     enemy: {fileID: 8698005530218634122, guid: 79f136493ccefd94a9faa96a61288a36, type: 3}
     count: 1
-    rate: 0
+    rate: 1
   - name: D5
     enemy: {fileID: 8698005530218634122, guid: b31f59d2887db25459043b9cd8793ff8, type: 3}
     count: 1
-    rate: 0
+    rate: 1
   - name: E5
     enemy: {fileID: 8698005530218634122, guid: 55f1ef5957dc4e147867c311afbaf731, type: 3}
     count: 1
-    rate: 0
+    rate: 1
   - name: D5
     enemy: {fileID: 8698005530218634122, guid: b31f59d2887db25459043b9cd8793ff8, type: 3}
     count: 1
-    rate: 0
+    rate: 1
   - name: G4
     enemy: {fileID: 8698005530218634122, guid: e6a21582d74da794d88b55cbc81b2dd4, type: 3}
     count: 1
-    rate: 0
+    rate: 1
   - name: A4
     enemy: {fileID: 8698005530218634122, guid: 79f136493ccefd94a9faa96a61288a36, type: 3}
     count: 1
-    rate: 0
+    rate: 1
   - name: C5
     enemy: {fileID: 8698005530218634122, guid: 53ce49cf813f2784985362ef2dc95ba5, type: 3}
     count: 1
-    rate: 0
+    rate: 1
   - name: A4
     enemy: {fileID: 8698005530218634122, guid: 79f136493ccefd94a9faa96a61288a36, type: 3}
     count: 1
-    rate: 0
+    rate: 1
   - name: E5
     enemy: {fileID: 8698005530218634122, guid: 55f1ef5957dc4e147867c311afbaf731, type: 3}
     count: 2
-    rate: 0
+    rate: 1
   - name: D5
     enemy: {fileID: 8698005530218634122, guid: b31f59d2887db25459043b9cd8793ff8, type: 3}
     count: 1
-    rate: 0
+    rate: 1
   - name: G4
     enemy: {fileID: 8698005530218634122, guid: e6a21582d74da794d88b55cbc81b2dd4, type: 3}
     count: 1
-    rate: 0
+    rate: 1
   - name: A4
     enemy: {fileID: 8698005530218634122, guid: 79f136493ccefd94a9faa96a61288a36, type: 3}
     count: 1
-    rate: 0
+    rate: 1
   - name: C5
     enemy: {fileID: 8698005530218634122, guid: 53ce49cf813f2784985362ef2dc95ba5, type: 3}
     count: 1
-    rate: 0
+    rate: 1
   - name: A4
     enemy: {fileID: 8698005530218634122, guid: 79f136493ccefd94a9faa96a61288a36, type: 3}
     count: 1
-    rate: 0
+    rate: 1
   - name: D5
     enemy: {fileID: 8698005530218634122, guid: b31f59d2887db25459043b9cd8793ff8, type: 3}
     count: 2
-    rate: 0
+    rate: 1
   - name: C5
     enemy: {fileID: 8698005530218634122, guid: 53ce49cf813f2784985362ef2dc95ba5, type: 3}
     count: 1
-    rate: 0
+    rate: 1
   - name: B4
     enemy: {fileID: 8698005530218634122, guid: f61e60e91f6f66d4b85a96008205e879, type: 3}
     count: 1
-    rate: 0
+    rate: 1
   - name: A4
     enemy: {fileID: 8698005530218634122, guid: 79f136493ccefd94a9faa96a61288a36, type: 3}
     count: 1
-    rate: 0
+    rate: 1
   - name: G4
     enemy: {fileID: 8698005530218634122, guid: e6a21582d74da794d88b55cbc81b2dd4, type: 3}
     count: 1
-    rate: 0
+    rate: 1
   - name: A4
     enemy: {fileID: 8698005530218634122, guid: 79f136493ccefd94a9faa96a61288a36, type: 3}
     count: 1
-    rate: 0
+    rate: 1
   - name: C5
     enemy: {fileID: 8698005530218634122, guid: 53ce49cf813f2784985362ef2dc95ba5, type: 3}
     count: 1
-    rate: 0
+    rate: 1
   - name: A4
     enemy: {fileID: 8698005530218634122, guid: 79f136493ccefd94a9faa96a61288a36, type: 3}
     count: 1
-    rate: 0
+    rate: 1
   - name: C5
     enemy: {fileID: 8698005530218634122, guid: 53ce49cf813f2784985362ef2dc95ba5, type: 3}
     count: 1
-    rate: 0
+    rate: 1
   - name: D5
     enemy: {fileID: 8698005530218634122, guid: b31f59d2887db25459043b9cd8793ff8, type: 3}
     count: 1
-    rate: 0
+    rate: 1
   - name: B4
     enemy: {fileID: 8698005530218634122, guid: f61e60e91f6f66d4b85a96008205e879, type: 3}
     count: 1
-    rate: 0
+    rate: 1
   - name: A4
     enemy: {fileID: 8698005530218634122, guid: 79f136493ccefd94a9faa96a61288a36, type: 3}
     count: 1
-    rate: 0
+    rate: 1
   - name: G4
     enemy: {fileID: 8698005530218634122, guid: e6a21582d74da794d88b55cbc81b2dd4, type: 3}
     count: 2
-    rate: 0
+    rate: 1
   - name: D5
     enemy: {fileID: 8698005530218634122, guid: b31f59d2887db25459043b9cd8793ff8, type: 3}
     count: 1
-    rate: 0
+    rate: 1
   - name: C5
     enemy: {fileID: 8698005530218634122, guid: 53ce49cf813f2784985362ef2dc95ba5, type: 3}
     count: 1
-    rate: 0
+    rate: 1
   - name: G4
     enemy: {fileID: 8698005530218634122, guid: e6a21582d74da794d88b55cbc81b2dd4, type: 3}
     count: 1
-    rate: 0
+    rate: 1
   - name: A4
     enemy: {fileID: 8698005530218634122, guid: 79f136493ccefd94a9faa96a61288a36, type: 3}
     count: 1
-    rate: 0
+    rate: 1
   - name: C5
     enemy: {fileID: 8698005530218634122, guid: 53ce49cf813f2784985362ef2dc95ba5, type: 3}
     count: 1
-    rate: 0
+    rate: 1
   - name: A4
     enemy: {fileID: 8698005530218634122, guid: 79f136493ccefd94a9faa96a61288a36, type: 3}
     count: 1
-    rate: 0
+    rate: 1
   - name: E5
     enemy: {fileID: 8698005530218634122, guid: 55f1ef5957dc4e147867c311afbaf731, type: 3}
     count: 2
-    rate: 0
+    rate: 1
   - name: D5
     enemy: {fileID: 8698005530218634122, guid: b31f59d2887db25459043b9cd8793ff8, type: 3}
     count: 1
-    rate: 0
+    rate: 1
   - name: G4
     enemy: {fileID: 8698005530218634122, guid: e6a21582d74da794d88b55cbc81b2dd4, type: 3}
     count: 1
-    rate: 0
+    rate: 1
   - name: A4
     enemy: {fileID: 8698005530218634122, guid: 79f136493ccefd94a9faa96a61288a36, type: 3}
     count: 1
-    rate: 0
+    rate: 1
   - name: C5
     enemy: {fileID: 8698005530218634122, guid: 53ce49cf813f2784985362ef2dc95ba5, type: 3}
     count: 1
-    rate: 0
+    rate: 1
   - name: A4
     enemy: {fileID: 8698005530218634122, guid: 79f136493ccefd94a9faa96a61288a36, type: 3}
     count: 1
-    rate: 0
+    rate: 1
   - name: G5
     enemy: {fileID: 8698005530218634122, guid: 4c973c40e086acf44b3a4ab6a197ee15, type: 3}
     count: 1
-    rate: 0
+    rate: 1
   - name: B4
     enemy: {fileID: 8698005530218634122, guid: f61e60e91f6f66d4b85a96008205e879, type: 3}
     count: 1
-    rate: 0
+    rate: 1
   - name: C5
     enemy: {fileID: 8698005530218634122, guid: 53ce49cf813f2784985362ef2dc95ba5, type: 3}
     count: 1
-    rate: 0
+    rate: 1
   - name: B4
     enemy: {fileID: 8698005530218634122, guid: f61e60e91f6f66d4b85a96008205e879, type: 3}
     count: 1
-    rate: 0
+    rate: 1
   - name: A4
     enemy: {fileID: 8698005530218634122, guid: 79f136493ccefd94a9faa96a61288a36, type: 3}
     count: 1
-    rate: 0
+    rate: 1
   - name: G4
     enemy: {fileID: 8698005530218634122, guid: e6a21582d74da794d88b55cbc81b2dd4, type: 3}
     count: 1
-    rate: 0
+    rate: 1
   - name: A4
     enemy: {fileID: 8698005530218634122, guid: 79f136493ccefd94a9faa96a61288a36, type: 3}
     count: 1
-    rate: 0
+    rate: 1
   - name: C5
     enemy: {fileID: 8698005530218634122, guid: 53ce49cf813f2784985362ef2dc95ba5, type: 3}
     count: 1
-    rate: 0
+    rate: 1
   - name: A4
     enemy: {fileID: 8698005530218634122, guid: 79f136493ccefd94a9faa96a61288a36, type: 3}
     count: 1
-    rate: 0
+    rate: 1
   - name: C5
     enemy: {fileID: 8698005530218634122, guid: 53ce49cf813f2784985362ef2dc95ba5, type: 3}
     count: 1
-    rate: 0
+    rate: 1
   - name: D5
     enemy: {fileID: 8698005530218634122, guid: b31f59d2887db25459043b9cd8793ff8, type: 3}
     count: 1
-    rate: 0
+    rate: 1
   - name: B4
     enemy: {fileID: 8698005530218634122, guid: f61e60e91f6f66d4b85a96008205e879, type: 3}
     count: 1
-    rate: 0
+    rate: 1
   - name: A4
     enemy: {fileID: 8698005530218634122, guid: 79f136493ccefd94a9faa96a61288a36, type: 3}
     count: 1
-    rate: 0
+    rate: 1
   - name: G4
     enemy: {fileID: 8698005530218634122, guid: e6a21582d74da794d88b55cbc81b2dd4, type: 3}
     count: 2
-    rate: 0
+    rate: 1
   - name: D5
     enemy: {fileID: 8698005530218634122, guid: b31f59d2887db25459043b9cd8793ff8, type: 3}
     count: 1
-    rate: 0
+    rate: 1
   - name: C5
     enemy: {fileID: 8698005530218634122, guid: 53ce49cf813f2784985362ef2dc95ba5, type: 3}
     count: 2
-    rate: 0
+    rate: 1
   - name: D5
     enemy: {fileID: 8698005530218634122, guid: b31f59d2887db25459043b9cd8793ff8, type: 3}
     count: 1
-    rate: 0
+    rate: 1
   - name: G4
     enemy: {fileID: 8698005530218634122, guid: e6a21582d74da794d88b55cbc81b2dd4, type: 3}
     count: 1
-    rate: 0
+    rate: 1
   - name: D5
     enemy: {fileID: 8698005530218634122, guid: b31f59d2887db25459043b9cd8793ff8, type: 3}
     count: 1
-    rate: 0
+    rate: 1
   - name: E5
     enemy: {fileID: 8698005530218634122, guid: 55f1ef5957dc4e147867c311afbaf731, type: 3}
     count: 1
-    rate: 0
+    rate: 1
   - name: G5
     enemy: {fileID: 8698005530218634122, guid: 4c973c40e086acf44b3a4ab6a197ee15, type: 3}
     count: 1
-    rate: 0
+    rate: 1
   - name: F5
     enemy: {fileID: 0}
     count: 1
-    rate: 0
+    rate: 1
   - name: E5
     enemy: {fileID: 8698005530218634122, guid: 55f1ef5957dc4e147867c311afbaf731, type: 3}
     count: 1
-    rate: 0
+    rate: 1
   - name: C5
     enemy: {fileID: 8698005530218634122, guid: 53ce49cf813f2784985362ef2dc95ba5, type: 3}
     count: 1
-    rate: 0
+    rate: 1
   - name: D5
     enemy: {fileID: 8698005530218634122, guid: b31f59d2887db25459043b9cd8793ff8, type: 3}
     count: 1
-    rate: 0
+    rate: 1
   - name: G4
     enemy: {fileID: 8698005530218634122, guid: e6a21582d74da794d88b55cbc81b2dd4, type: 3}
     count: 3
-    rate: 0
+    rate: 1
   - name: A4
     enemy: {fileID: 8698005530218634122, guid: 79f136493ccefd94a9faa96a61288a36, type: 3}
     count: 1
-    rate: 0
+    rate: 1
   - name: C5
     enemy: {fileID: 8698005530218634122, guid: 53ce49cf813f2784985362ef2dc95ba5, type: 3}
     count: 3
-    rate: 0
+    rate: 1
   - name: D5
     enemy: {fileID: 8698005530218634122, guid: b31f59d2887db25459043b9cd8793ff8, type: 3}
     count: 1
-    rate: 0
+    rate: 1
   - name: G4
     enemy: {fileID: 8698005530218634122, guid: e6a21582d74da794d88b55cbc81b2dd4, type: 3}
     count: 1
-    rate: 0
+    rate: 1
   - name: D5
     enemy: {fileID: 8698005530218634122, guid: b31f59d2887db25459043b9cd8793ff8, type: 3}
     count: 1
-    rate: 0
+    rate: 1
   - name: E5
     enemy: {fileID: 8698005530218634122, guid: 55f1ef5957dc4e147867c311afbaf731, type: 3}
     count: 1
-    rate: 0
+    rate: 1
   - name: G5
     enemy: {fileID: 8698005530218634122, guid: 4c973c40e086acf44b3a4ab6a197ee15, type: 3}
     count: 1
-    rate: 0
+    rate: 1
   - name: F5
     enemy: {fileID: 8698005530218634122, guid: 460771aa94cfa414b87b22f38d98d5ac, type: 3}
     count: 1
-    rate: 0
+    rate: 1
   - name: E5
     enemy: {fileID: 8698005530218634122, guid: 55f1ef5957dc4e147867c311afbaf731, type: 3}
     count: 1
-    rate: 0
+    rate: 1
   - name: C5
     enemy: {fileID: 8698005530218634122, guid: 53ce49cf813f2784985362ef2dc95ba5, type: 3}
     count: 1
-    rate: 0
+    rate: 1
   - name: D5
     enemy: {fileID: 8698005530218634122, guid: b31f59d2887db25459043b9cd8793ff8, type: 3}
     count: 1
-    rate: 0
+    rate: 1
   - name: G4
     enemy: {fileID: 8698005530218634122, guid: e6a21582d74da794d88b55cbc81b2dd4, type: 3}
     count: 1
-    rate: 0
+    rate: 1
   - name: B4
     enemy: {fileID: 8698005530218634122, guid: f61e60e91f6f66d4b85a96008205e879, type: 3}
     count: 1
-    rate: 0
+    rate: 1
   - name: C5
     enemy: {fileID: 8698005530218634122, guid: 53ce49cf813f2784985362ef2dc95ba5, type: 3}
     count: 5
-    rate: 0
+    rate: 1
   - name: A4
     enemy: {fileID: 8698005530218634122, guid: 79f136493ccefd94a9faa96a61288a36, type: 3}
     count: 1
-    rate: 0
+    rate: 1
   - name: B4
     enemy: {fileID: 8698005530218634122, guid: f61e60e91f6f66d4b85a96008205e879, type: 3}
     count: 1
-    rate: 0
+    rate: 1
   - name: C5
     enemy: {fileID: 8698005530218634122, guid: 53ce49cf813f2784985362ef2dc95ba5, type: 3}
     count: 2
-    rate: 0
+    rate: 1
   - name: D5
     enemy: {fileID: 8698005530218634122, guid: b31f59d2887db25459043b9cd8793ff8, type: 3}
     count: 1
-    rate: 0
+    rate: 1
   - name: B4
     enemy: {fileID: 8698005530218634122, guid: f61e60e91f6f66d4b85a96008205e879, type: 3}
     count: 1
-    rate: 0
+    rate: 1
   - name: A4
     enemy: {fileID: 8698005530218634122, guid: 79f136493ccefd94a9faa96a61288a36, type: 3}
     count: 1
-    rate: 0
+    rate: 1
   - name: G4
     enemy: {fileID: 8698005530218634122, guid: e6a21582d74da794d88b55cbc81b2dd4, type: 3}
     count: 1
-    rate: 0
+    rate: 1
   - name: A4
     enemy: {fileID: 8698005530218634122, guid: 79f136493ccefd94a9faa96a61288a36, type: 3}
     count: 2
-    rate: 0
+    rate: 1
   - name: B4
     enemy: {fileID: 8698005530218634122, guid: f61e60e91f6f66d4b85a96008205e879, type: 3}
     count: 1
-    rate: 0
+    rate: 1
   - name: C5
     enemy: {fileID: 8698005530218634122, guid: 53ce49cf813f2784985362ef2dc95ba5, type: 3}
     count: 1
-    rate: 0
+    rate: 1
   - name: A4
     enemy: {fileID: 8698005530218634122, guid: 79f136493ccefd94a9faa96a61288a36, type: 3}
     count: 1
-    rate: 0
+    rate: 1
   - name: G4
     enemy: {fileID: 8698005530218634122, guid: e6a21582d74da794d88b55cbc81b2dd4, type: 3}
     count: 1
-    rate: 0
+    rate: 1
   - name: G5
     enemy: {fileID: 8698005530218634122, guid: 4c973c40e086acf44b3a4ab6a197ee15, type: 3}
     count: 2
-    rate: 0
+    rate: 1
   - name: D5
     enemy: {fileID: 8698005530218634122, guid: b31f59d2887db25459043b9cd8793ff8, type: 3}
     count: 1
-    rate: 0
+    rate: 1
   - name: G5
     enemy: {fileID: 8698005530218634122, guid: 4c973c40e086acf44b3a4ab6a197ee15, type: 3}
     count: 1
-    rate: 0
+    rate: 1
   - name: D5
     enemy: {fileID: 8698005530218634122, guid: b31f59d2887db25459043b9cd8793ff8, type: 3}
     count: 1
-    rate: 0
+    rate: 1
   - name: G5
     enemy: {fileID: 8698005530218634122, guid: 4c973c40e086acf44b3a4ab6a197ee15, type: 3}
     count: 1
-    rate: 0
+    rate: 1
   - name: D5
     enemy: {fileID: 8698005530218634122, guid: b31f59d2887db25459043b9cd8793ff8, type: 3}
     count: 1
-    rate: 0
+    rate: 1
   - name: A4
     enemy: {fileID: 8698005530218634122, guid: 79f136493ccefd94a9faa96a61288a36, type: 3}
     count: 2
-    rate: 0
+    rate: 1
   - name: B4
     enemy: {fileID: 8698005530218634122, guid: f61e60e91f6f66d4b85a96008205e879, type: 3}
     count: 1
-    rate: 0
+    rate: 1
   - name: C5
     enemy: {fileID: 8698005530218634122, guid: 53ce49cf813f2784985362ef2dc95ba5, type: 3}
     count: 1
-    rate: 0
+    rate: 1
   - name: A4
     enemy: {fileID: 8698005530218634122, guid: 79f136493ccefd94a9faa96a61288a36, type: 3}
     count: 1
-    rate: 0
+    rate: 1
   - name: C5
     enemy: {fileID: 8698005530218634122, guid: 53ce49cf813f2784985362ef2dc95ba5, type: 3}
     count: 1
-    rate: 0
+    rate: 1
   - name: D5
     enemy: {fileID: 8698005530218634122, guid: b31f59d2887db25459043b9cd8793ff8, type: 3}
     count: 1
-    rate: 0
+    rate: 1
   - name: B4
     enemy: {fileID: 8698005530218634122, guid: f61e60e91f6f66d4b85a96008205e879, type: 3}
     count: 1
-    rate: 0
+    rate: 1
   - name: A4
     enemy: {fileID: 8698005530218634122, guid: 79f136493ccefd94a9faa96a61288a36, type: 3}
     count: 1
-    rate: 0
+    rate: 1
   - name: G4
     enemy: {fileID: 8698005530218634122, guid: e6a21582d74da794d88b55cbc81b2dd4, type: 3}
     count: 1
-    rate: 0
+    rate: 1
   - name: A4
     enemy: {fileID: 8698005530218634122, guid: 79f136493ccefd94a9faa96a61288a36, type: 3}
     count: 2
-    rate: 0
+    rate: 1
   - name: B4
     enemy: {fileID: 8698005530218634122, guid: f61e60e91f6f66d4b85a96008205e879, type: 3}
     count: 1
-    rate: 0
+    rate: 1
   - name: C5
     enemy: {fileID: 8698005530218634122, guid: 53ce49cf813f2784985362ef2dc95ba5, type: 3}
     count: 1
-    rate: 0
+    rate: 1
   - name: A4
     enemy: {fileID: 8698005530218634122, guid: 79f136493ccefd94a9faa96a61288a36, type: 3}
     count: 1
-    rate: 0
+    rate: 1
   - name: G4
     enemy: {fileID: 8698005530218634122, guid: e6a21582d74da794d88b55cbc81b2dd4, type: 3}
     count: 1
-    rate: 0
+    rate: 1
   - name: D5
     enemy: {fileID: 8698005530218634122, guid: b31f59d2887db25459043b9cd8793ff8, type: 3}
     count: 3
-    rate: 0
+    rate: 1
   - name: E5
     enemy: {fileID: 8698005530218634122, guid: 55f1ef5957dc4e147867c311afbaf731, type: 3}
     count: 1
-    rate: 0
+    rate: 1
   - name: D5
     enemy: {fileID: 8698005530218634122, guid: b31f59d2887db25459043b9cd8793ff8, type: 3}
     count: 1
-    rate: 0
+    rate: 1
   - name: C5
     enemy: {fileID: 8698005530218634122, guid: 53ce49cf813f2784985362ef2dc95ba5, type: 3}
     count: 1
-    rate: 0
+    rate: 1
   - name: D5
     enemy: {fileID: 8698005530218634122, guid: b31f59d2887db25459043b9cd8793ff8, type: 3}
     count: 1
-    rate: 0
+    rate: 1
   - name: E5
     enemy: {fileID: 8698005530218634122, guid: 55f1ef5957dc4e147867c311afbaf731, type: 3}
     count: 1
-    rate: 0
+    rate: 1
   - name: C5
     enemy: {fileID: 8698005530218634122, guid: 53ce49cf813f2784985362ef2dc95ba5, type: 3}
     count: 1
-    rate: 0
+    rate: 1
   - name: D5
     enemy: {fileID: 8698005530218634122, guid: b31f59d2887db25459043b9cd8793ff8, type: 3}
     count: 3
-    rate: 0
+    rate: 1
   - name: E5
     enemy: {fileID: 8698005530218634122, guid: 55f1ef5957dc4e147867c311afbaf731, type: 3}
     count: 1
-    rate: 0
+    rate: 1
   - name: D5
     enemy: {fileID: 8698005530218634122, guid: b31f59d2887db25459043b9cd8793ff8, type: 3}
     count: 1
-    rate: 0
+    rate: 1
   - name: G4
     enemy: {fileID: 8698005530218634122, guid: e6a21582d74da794d88b55cbc81b2dd4, type: 3}
     count: 1
-    rate: 0
+    rate: 1
   - name: A4
     enemy: {fileID: 8698005530218634122, guid: 79f136493ccefd94a9faa96a61288a36, type: 3}
     count: 1
-    rate: 0
+    rate: 1
   - name: B4
     enemy: {fileID: 8698005530218634122, guid: f61e60e91f6f66d4b85a96008205e879, type: 3}
     count: 1
-    rate: 0
+    rate: 1
   - name: C5
     enemy: {fileID: 8698005530218634122, guid: 53ce49cf813f2784985362ef2dc95ba5, type: 3}
     count: 1
-    rate: 0
+    rate: 1
   - name: A4
     enemy: {fileID: 8698005530218634122, guid: 79f136493ccefd94a9faa96a61288a36, type: 3}
     count: 1
-    rate: 0
+    rate: 1
   - name: D5
     enemy: {fileID: 8698005530218634122, guid: b31f59d2887db25459043b9cd8793ff8, type: 3}
     count: 1
-    rate: 0
+    rate: 1
   - name: E5
     enemy: {fileID: 8698005530218634122, guid: 55f1ef5957dc4e147867c311afbaf731, type: 3}
     count: 1
-    rate: 0
+    rate: 1
   - name: D5
     enemy: {fileID: 8698005530218634122, guid: b31f59d2887db25459043b9cd8793ff8, type: 3}
     count: 1
-    rate: 0
+    rate: 1
   - name: G4
     enemy: {fileID: 8698005530218634122, guid: e6a21582d74da794d88b55cbc81b2dd4, type: 3}
     count: 1
-    rate: 0
+    rate: 1
   - name: A4
     enemy: {fileID: 8698005530218634122, guid: 79f136493ccefd94a9faa96a61288a36, type: 3}
     count: 1
-    rate: 0
+    rate: 1
   - name: E5
     enemy: {fileID: 8698005530218634122, guid: 55f1ef5957dc4e147867c311afbaf731, type: 3}
     count: 2
-    rate: 0
+    rate: 1
   - name: D5
     enemy: {fileID: 8698005530218634122, guid: b31f59d2887db25459043b9cd8793ff8, type: 3}
     count: 1
-    rate: 0
+    rate: 1
   - name: G4
     enemy: {fileID: 8698005530218634122, guid: e6a21582d74da794d88b55cbc81b2dd4, type: 3}
     count: 1
-    rate: 0
+    rate: 1
   - name: A4
     enemy: {fileID: 8698005530218634122, guid: 79f136493ccefd94a9faa96a61288a36, type: 3}
     count: 1
-    rate: 0
+    rate: 1
   - name: C5
     enemy: {fileID: 8698005530218634122, guid: 53ce49cf813f2784985362ef2dc95ba5, type: 3}
     count: 1
-    rate: 0
+    rate: 1
   - name: A4
     enemy: {fileID: 8698005530218634122, guid: 79f136493ccefd94a9faa96a61288a36, type: 3}
     count: 1
-    rate: 0
+    rate: 1
   - name: D5
     enemy: {fileID: 8698005530218634122, guid: b31f59d2887db25459043b9cd8793ff8, type: 3}
     count: 2
-    rate: 0
+    rate: 1
   - name: C5
     enemy: {fileID: 8698005530218634122, guid: 53ce49cf813f2784985362ef2dc95ba5, type: 3}
     count: 1
-    rate: 0
+    rate: 1
   - name: B4
     enemy: {fileID: 8698005530218634122, guid: f61e60e91f6f66d4b85a96008205e879, type: 3}
     count: 1
-    rate: 0
+    rate: 1
   - name: A4
     enemy: {fileID: 8698005530218634122, guid: 79f136493ccefd94a9faa96a61288a36, type: 3}
     count: 1
-    rate: 0
+    rate: 1
   - name: G4
     enemy: {fileID: 8698005530218634122, guid: e6a21582d74da794d88b55cbc81b2dd4, type: 3}
     count: 1
-    rate: 0
+    rate: 1
   - name: A4
     enemy: {fileID: 8698005530218634122, guid: 79f136493ccefd94a9faa96a61288a36, type: 3}
     count: 1
-    rate: 0
+    rate: 1
   - name: C5
     enemy: {fileID: 8698005530218634122, guid: 53ce49cf813f2784985362ef2dc95ba5, type: 3}
     count: 1
-    rate: 0
+    rate: 1
   - name: A4
     enemy: {fileID: 8698005530218634122, guid: 79f136493ccefd94a9faa96a61288a36, type: 3}
     count: 1
-    rate: 0
+    rate: 1
   - name: C5
     enemy: {fileID: 8698005530218634122, guid: 53ce49cf813f2784985362ef2dc95ba5, type: 3}
     count: 1
-    rate: 0
+    rate: 1
   - name: D5
     enemy: {fileID: 8698005530218634122, guid: b31f59d2887db25459043b9cd8793ff8, type: 3}
     count: 1
-    rate: 0
+    rate: 1
   - name: B4
     enemy: {fileID: 8698005530218634122, guid: f61e60e91f6f66d4b85a96008205e879, type: 3}
     count: 1
-    rate: 0
+    rate: 1
   - name: A4
     enemy: {fileID: 8698005530218634122, guid: 79f136493ccefd94a9faa96a61288a36, type: 3}
     count: 1
-    rate: 0
+    rate: 1
   - name: G4
     enemy: {fileID: 8698005530218634122, guid: e6a21582d74da794d88b55cbc81b2dd4, type: 3}
     count: 1
-    rate: 0
+    rate: 1
   - name: A4
     enemy: {fileID: 8698005530218634122, guid: 79f136493ccefd94a9faa96a61288a36, type: 3}
     count: 1
-    rate: 0
+    rate: 1
   - name: D5
     enemy: {fileID: 8698005530218634122, guid: b31f59d2887db25459043b9cd8793ff8, type: 3}
     count: 1
-    rate: 0
+    rate: 1
   - name: C5
     enemy: {fileID: 8698005530218634122, guid: 53ce49cf813f2784985362ef2dc95ba5, type: 3}
     count: 1
-    rate: 0
+    rate: 1
   - name: G4
     enemy: {fileID: 8698005530218634122, guid: e6a21582d74da794d88b55cbc81b2dd4, type: 3}
     count: 1
-    rate: 0
+    rate: 1
   - name: A4
     enemy: {fileID: 8698005530218634122, guid: 79f136493ccefd94a9faa96a61288a36, type: 3}
     count: 1
-    rate: 0
+    rate: 1
   - name: C5
     enemy: {fileID: 8698005530218634122, guid: 53ce49cf813f2784985362ef2dc95ba5, type: 3}
     count: 1
-    rate: 0
+    rate: 1
   - name: A4
     enemy: {fileID: 8698005530218634122, guid: 79f136493ccefd94a9faa96a61288a36, type: 3}
     count: 1
-    rate: 0
+    rate: 1
   - name: E5
     enemy: {fileID: 8698005530218634122, guid: 55f1ef5957dc4e147867c311afbaf731, type: 3}
     count: 2
-    rate: 0
+    rate: 1
   - name: D5
     enemy: {fileID: 8698005530218634122, guid: b31f59d2887db25459043b9cd8793ff8, type: 3}
     count: 1
-    rate: 0
+    rate: 1
   - name: G4
     enemy: {fileID: 8698005530218634122, guid: e6a21582d74da794d88b55cbc81b2dd4, type: 3}
     count: 1
-    rate: 0
+    rate: 1
   - name: A4
     enemy: {fileID: 8698005530218634122, guid: 79f136493ccefd94a9faa96a61288a36, type: 3}
     count: 1
-    rate: 0
+    rate: 1
   - name: C5
     enemy: {fileID: 8698005530218634122, guid: 53ce49cf813f2784985362ef2dc95ba5, type: 3}
     count: 1
-    rate: 0
+    rate: 1
   - name: A4
     enemy: {fileID: 8698005530218634122, guid: 79f136493ccefd94a9faa96a61288a36, type: 3}
     count: 1
-    rate: 0
+    rate: 1
   - name: G5
     enemy: {fileID: 8698005530218634122, guid: 4c973c40e086acf44b3a4ab6a197ee15, type: 3}
     count: 1
-    rate: 0
+    rate: 1
   - name: B4
     enemy: {fileID: 8698005530218634122, guid: f61e60e91f6f66d4b85a96008205e879, type: 3}
     count: 1
-    rate: 0
+    rate: 1
   - name: C5
     enemy: {fileID: 8698005530218634122, guid: 53ce49cf813f2784985362ef2dc95ba5, type: 3}
     count: 1
-    rate: 0
+    rate: 1
   - name: B4
     enemy: {fileID: 8698005530218634122, guid: f61e60e91f6f66d4b85a96008205e879, type: 3}
     count: 1
-    rate: 0
+    rate: 1
   - name: A4
     enemy: {fileID: 8698005530218634122, guid: 79f136493ccefd94a9faa96a61288a36, type: 3}
     count: 1
-    rate: 0
+    rate: 1
   - name: G4
     enemy: {fileID: 8698005530218634122, guid: e6a21582d74da794d88b55cbc81b2dd4, type: 3}
     count: 1
-    rate: 0
+    rate: 1
   - name: A4
     enemy: {fileID: 8698005530218634122, guid: 79f136493ccefd94a9faa96a61288a36, type: 3}
     count: 1
-    rate: 0
+    rate: 1
   - name: C5
     enemy: {fileID: 8698005530218634122, guid: 53ce49cf813f2784985362ef2dc95ba5, type: 3}
     count: 1
-    rate: 0
+    rate: 1
   - name: A4
     enemy: {fileID: 8698005530218634122, guid: 79f136493ccefd94a9faa96a61288a36, type: 3}
     count: 1
-    rate: 0
+    rate: 1
   - name: C5
     enemy: {fileID: 8698005530218634122, guid: 53ce49cf813f2784985362ef2dc95ba5, type: 3}
     count: 1
-    rate: 0
+    rate: 1
   - name: D5
     enemy: {fileID: 8698005530218634122, guid: b31f59d2887db25459043b9cd8793ff8, type: 3}
     count: 1
-    rate: 0
+    rate: 1
   - name: B4
     enemy: {fileID: 8698005530218634122, guid: f61e60e91f6f66d4b85a96008205e879, type: 3}
     count: 1
-    rate: 0
+    rate: 1
   - name: A4
     enemy: {fileID: 8698005530218634122, guid: 79f136493ccefd94a9faa96a61288a36, type: 3}
     count: 1
-    rate: 0
+    rate: 1
   - name: G4
     enemy: {fileID: 8698005530218634122, guid: e6a21582d74da794d88b55cbc81b2dd4, type: 3}
     count: 2
-    rate: 0
+    rate: 1
   - name: D5
     enemy: {fileID: 8698005530218634122, guid: b31f59d2887db25459043b9cd8793ff8, type: 3}
     count: 1
-    rate: 0
+    rate: 1
   - name: C5
     enemy: {fileID: 8698005530218634122, guid: 53ce49cf813f2784985362ef2dc95ba5, type: 3}
     count: 1
-    rate: 0
+    rate: 1
   nextWave: 0
   spawnPoints:
   - {fileID: 307045008}
