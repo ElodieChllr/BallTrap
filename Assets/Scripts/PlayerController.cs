@@ -21,7 +21,7 @@ public class PlayerController : MonoBehaviour
     private Rigidbody2D rb2D;
     InputAction moveAction;
 
-
+    private Canard canardRef;
    
     private void Awake()
     {
@@ -32,7 +32,7 @@ public class PlayerController : MonoBehaviour
     private void Start()
     {
         rb2D = GetComponent<Rigidbody2D>();
-
+        
         transform.position = new Vector3(transform.position.x, transform.position.y, 0);
 
     }
@@ -68,5 +68,27 @@ public class PlayerController : MonoBehaviour
     //    rb2D.velocity = new Vector2(move.x * speedMove, move.y * speedMove);
     //}
 
+
+    //private void OnTriggerEnter2D(Collider2D other)
+    //{
+    //    if (other.CompareTag("Enemy"))
+    //    {
+    //        other.gameObject.GetComponents<Canard>();
+    //        Debug.Log("on trigger");
+
+    //        if (playerControls.actions["Shoot"].IsPressed())
+    //        {
+    //            Debug.Log("shoot");
+    //            canardRef.ShootEm();
+    //        }           
+
+    //    }        
+    //}
+
+
+    public void ShootCanard()
+    {
+
+    }
 
 }
