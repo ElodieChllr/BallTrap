@@ -4,11 +4,12 @@ using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.InputSystem;
 using UnityEngine.InputSystem.UI;
+using UnityEngine.SceneManagement;
 
 public class Canard : MonoBehaviour
 {
     public int points = 10;
-    public ScoreManager scoreManager;
+    private ScoreManager scoreManager;
     public CanardManager canardManagerRef;
     //public AudioClip QuackClip;
     public AudioSource QuackSource;
@@ -33,6 +34,8 @@ public class Canard : MonoBehaviour
         _collider2D = GetComponent<Collider2D>();
         shakeCamAnim = GameObject.FindWithTag("MainCamera").GetComponent<Animator>();
         virtualMouseUI = GetComponent<VirtualMouseUI>();
+
+        scoreManager = GameObject.FindGameObjectWithTag("ScoreManager").GetComponent<ScoreManager>();
 
         player = GameObject.FindWithTag("Player");
         playerInputRef = player.gameObject.GetComponent<PlayerInput>();
@@ -81,6 +84,7 @@ public class Canard : MonoBehaviour
             {
                 Debug.Log("shoot");
                 shakeCamAnim.SetTrigger("ShakeCam");
+                scoreManager.AjouterPoints(points);
                 ShootEm();
             }
 

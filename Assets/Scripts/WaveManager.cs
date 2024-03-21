@@ -82,7 +82,7 @@ public class WaveManager : MonoBehaviour
         for(int i = 0; i < _wave.count; i++)
         {
             SpawnEnemy(_wave.enemy);
-            yield return new WaitForSeconds(1f / _wave.rate);
+            yield return new WaitForSeconds(0.75f / _wave.rate);
         }
 
         state = SpawnState.WAITING;

@@ -8,7 +8,7 @@ public class PauseManager : MonoBehaviour
     public GameObject pnl_Pause;
     private bool isPaused;
 
-    public PlayerInput playerInputRef;
+    private PlayerInput playerInputRef;
     public GameObject player;
 
     public Animator settingsAnimator;
