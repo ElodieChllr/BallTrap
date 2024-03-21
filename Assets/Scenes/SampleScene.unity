@@ -521,8 +521,10 @@ GameObject:
   m_Component:
   - component: {fileID: 176708798}
   - component: {fileID: 176708800}
+  - component: {fileID: 176708802}
   - component: {fileID: 176708799}
   - component: {fileID: 176708801}
+  - component: {fileID: 176708803}
   m_Layer: 5
   m_Name: VmouseCursor
   m_TagString: Untagged
@@ -602,6 +604,54 @@ MonoBehaviour:
   m_EffectColor: {r: 0, g: 0, b: 0, a: 1}
   m_EffectDistance: {x: 1, y: -1}
   m_UseGraphicAlpha: 1
+--- !u!114 &176708802
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 176708797}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dbcf58e911ca3a54eae0af44713e4c24, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  playerController: {fileID: 2081978975}
+--- !u!58 &176708803
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 176708797}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  serializedVersion: 2
+  m_Radius: 23.18
 --- !u!1 &217945849
 GameObject:
   m_ObjectHideFlags: 0
@@ -655,7 +705,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &306784428
 RectTransform:
   m_ObjectHideFlags: 0
@@ -691,7 +741,7 @@ MonoBehaviour:
   m_CursorMode: 0
   m_CursorGraphic: {fileID: 176708799}
   m_CursorTransform: {fileID: 176708798}
-  m_CursorSpeed: 1000
+  m_CursorSpeed: 1500
   m_ScrollSpeed: 45
   m_StickAction:
     m_UseReference: 0
@@ -2887,6 +2937,7 @@ GameObject:
   - component: {fileID: 2081978976}
   - component: {fileID: 2081978975}
   - component: {fileID: 2081978978}
+  - component: {fileID: 2081978979}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -2909,6 +2960,9 @@ MonoBehaviour:
   vitesseDeSuivi: 10
   minX: -7
   maxX: 7
+  playerControls: {fileID: 2081978978}
+  playerInput: {fileID: 2081978978}
+  speedMove: 15
 --- !u!212 &2081978976
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -3006,6 +3060,33 @@ MonoBehaviour:
   m_DefaultActionMap: PlayerMap
   m_SplitScreenIndex: -1
   m_Camera: {fileID: 0}
+--- !u!50 &2081978979
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2081978974}
+  m_BodyType: 0
+  m_Simulated: 0
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 4
 --- !u!1 &2099763836
 GameObject:
   m_ObjectHideFlags: 0

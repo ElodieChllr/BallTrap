@@ -38,21 +38,19 @@ public class Canard : MonoBehaviour
         //scoreManager.AjouterPoints(points);
         //Debug.Log(scoreManager.scoreActuel);
         //shakeCamAnim.SetTrigger("ShakeCam");
-        ShootEm();
-        StartCoroutine(CoroutineKill());
-
+        
 
     }
 
-    private void OnShootCanard()
+    public void OnShootCanard()
     {
-        if (virtualMouseUI.ShootController())
+        if (virtualMouseUI.ShootController() == true)
         {
             ShootEm();
             StartCoroutine(CoroutineKill());
         }
         else
-            Debug.Log("noShoot");
+            return;
     }
 
     public void DeplacerVersPosition()

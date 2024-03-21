@@ -33,7 +33,7 @@ public class WaveManager : MonoBehaviour
         Time.timeScale = 1f;
         if (spawnPoints.Length == 0)
         {
-            Debug.LogError("No spawn points ref");
+            //Debug.LogError("No spawn points ref");
         }
 
     }
@@ -82,7 +82,7 @@ public class WaveManager : MonoBehaviour
 
     void SpawnEnemy(Transform _enemy)
     {
-        Debug.Log("Spawning enemy : " + _enemy.name);
+       // Debug.Log("Spawning enemy : " + _enemy.name);
 
         
 
@@ -100,7 +100,7 @@ public class WaveManager : MonoBehaviour
             OpenLevel();
             //Time.timeScale = 0f;
             state = SpawnState.WAITING;
-            Debug.Log("ALL WAVES COMPLETE");
+            //Debug.Log("ALL WAVES COMPLETE");
         }
         else
         {
@@ -117,7 +117,7 @@ public class WaveManager : MonoBehaviour
             searchCountDown = 0.5f;
             if (GameObject.FindGameObjectsWithTag("Enemy").Length == GameObject.FindGameObjectsWithTag("Enemy").Length)
             {
-                Debug.Log("Alldead");
+               // Debug.Log("Alldead");
                 return false;
             }
         }
