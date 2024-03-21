@@ -20,7 +20,7 @@ public class WaveManager : MonoBehaviour
 
     public float searchCountDown = 0.05f;
     public GameObject EndPanel;
-    public bool ok;
+   
     public SpawnState state = SpawnState.COUNTING;
 
    // public GameObject LevelPanel;
@@ -28,7 +28,7 @@ public class WaveManager : MonoBehaviour
 
     void Start()
     {
-        ok = false;
+      
         StartCoroutine(WaitBeforeWave());
 
         waveCountdown = timeBetweenWaves;
@@ -44,8 +44,7 @@ public class WaveManager : MonoBehaviour
 
     void Update()
     {
-        if (ok == true)
-        {
+       
 
             if (state == SpawnState.WAITING)
             {
@@ -71,7 +70,7 @@ public class WaveManager : MonoBehaviour
                 waveCountdown -= Time.deltaTime;
             }
         }
-    }
+    
 
     IEnumerator SpawnWave(Wave _wave)
     {
@@ -150,7 +149,7 @@ public class WaveManager : MonoBehaviour
     public IEnumerator WaitBeforeWave()
     {
         yield return new WaitForSeconds(6f);
-        ok = true;
+        
 
     }
 }
