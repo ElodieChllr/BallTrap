@@ -32,8 +32,8 @@ public class WaveManager : MonoBehaviour
 
     void Start()
     {
-      
-        
+
+        StartCoroutine(finNiveau());
 
         waveCountdown = timeBetweenWaves;
         //LevelPanel.SetActive(false);
@@ -74,10 +74,7 @@ public class WaveManager : MonoBehaviour
                 waveCountdown -= Time.deltaTime;
             }
 
-        if (!chanson.isPlaying)
-        {
-            StartCoroutine(finNiveau());
-        }
+        
     }
     
 
@@ -151,7 +148,7 @@ public class WaveManager : MonoBehaviour
     
     public IEnumerator finNiveau()
     {
-        yield return new WaitForSeconds(3f);
+        yield return new WaitForSeconds(145f);
         EndPanel.SetActive(true);
         EventSystem.current.SetSelectedGameObject(BT_MainMenu/*.gameObject*/);
         Time.timeScale = 0f;
