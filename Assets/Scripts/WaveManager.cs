@@ -22,7 +22,9 @@ public class WaveManager : MonoBehaviour
     public GameObject EndPanel;
 
     public AudioSource chanson;
-   
+
+    public GameObject BT_MainMenu;
+
     public SpawnState state = SpawnState.COUNTING;
 
    // public GameObject LevelPanel;
@@ -151,6 +153,7 @@ public class WaveManager : MonoBehaviour
     {
         yield return new WaitForSeconds(3f);
         EndPanel.SetActive(true);
+        EventSystem.current.SetSelectedGameObject(BT_MainMenu/*.gameObject*/);
         Time.timeScale = 0f;
     }
 
