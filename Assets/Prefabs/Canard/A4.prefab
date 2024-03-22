@@ -151,6 +151,7 @@ MonoBehaviour:
   explosionQuack: {fileID: 304452476530651595}
   player: {fileID: 0}
   particleSystemRef: {fileID: 5134031378579747279}
+  canardKilled: 0
 --- !u!114 &-5017067983550557251
 MonoBehaviour:
   m_ObjectHideFlags: 0

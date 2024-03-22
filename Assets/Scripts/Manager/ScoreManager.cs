@@ -32,6 +32,13 @@ public class ScoreManager : MonoBehaviour
         MettreAJourAffichageScore();
     }
 
+    public void EnleverPoints(int pointAEnlever)
+    {
+        scoreActuel -= pointAEnlever;
+
+        MettreAJourAffichageScore();
+    }
+
     private void MettreAJourAffichageScore()
     {
         textScore.text = scoreActuel.ToString();

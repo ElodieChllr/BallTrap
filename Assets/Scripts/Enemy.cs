@@ -21,6 +21,9 @@ public class Enemy : MonoBehaviour
     private Gamepad gamepad;
     public float moveSpeed = 5f;
 
+    private ScoreManager scoreManagerRef;
+
+
     //public AudioSource EnemyDeathSound;
 
     //public GameObject[] bossBullet;
@@ -59,6 +62,8 @@ public class Enemy : MonoBehaviour
     //private WaveManager waveSpawner;
     void Start()
     {
+
+        scoreManagerRef = GameObject.FindGameObjectWithTag("ScoreManager").GetComponent<ScoreManager>();
 
         if (Gamepad.current != null)
         {
@@ -101,8 +106,13 @@ public class Enemy : MonoBehaviour
 
         if (pos.y >= 6.9f)
         {
-            StartVibration(0.1f, 0.5f);
-           gameObject.SetActive(false);
+            if(gameObject.tag == "Enemy")
+            {
+                scoreManagerRef.EnleverPoints(50);
+                StartVibration(0.1f, 0.5f);
+                gameObject.SetActive(false);
+            }
+            
         }
 
         //waveSpawner.waves[waveSpawner.currentWaveIndex].enemiesLeft--;

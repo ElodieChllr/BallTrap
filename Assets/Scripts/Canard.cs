@@ -31,6 +31,7 @@ public class Canard : MonoBehaviour
 
 
     private Gamepad gamepad;
+    public bool canardKilled = false;
 
     private void Start()
     {
@@ -46,14 +47,14 @@ public class Canard : MonoBehaviour
         playerInputRef = player.gameObject.GetComponent<PlayerInput>();
 
 
-        if (Gamepad.current != null)
-        {
-            gamepad = Gamepad.current;
-        }
-        else
-        {
-            Debug.LogWarning("No gamepad found.");
-        }
+        //if (Gamepad.current != null)
+        //{
+        //    gamepad = Gamepad.current;
+        //}
+        //else
+        //{
+        //    Debug.LogWarning("No gamepad found.");
+        //}
     }
 
     public void StartVibration(float duration, float amplitude)
@@ -123,6 +124,8 @@ public class Canard : MonoBehaviour
         Debug.Log("ShootEm");
         this.spriteRenderer.enabled = false;
         this._collider2D.enabled = false;
+        this.gameObject.tag = "Dead";
+        this.canardKilled = true;
     }
     public IEnumerator CoroutineKill()
     {
@@ -134,12 +137,12 @@ public class Canard : MonoBehaviour
 
     }
 
-    public void OnCollisionEnter2D(Collision2D collision)      
-    {
-        if (collision.gameObject.CompareTag("DeathZone"))
-        {
-            Debug.Log("deathZone");
-            StartVibration(0.1f, 0.5f);
-        }
-    }
+    //public void OnCollisionEnter2D(Collision2D collision)      
+    //{
+    //    if (collision.gameObject.CompareTag("DeathZone"))
+    //    {
+    //        Debug.Log("deathZone");
+    //        StartVibration(0.1f, 0.5f);
+    //    }
+    //}
 }
