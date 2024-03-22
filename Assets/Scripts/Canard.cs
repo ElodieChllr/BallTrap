@@ -28,7 +28,9 @@ public class Canard : MonoBehaviour
     public GameObject player;
 
     public ParticleSystem particleSystemRef;
-   
+
+
+    private Gamepad gamepad;
 
     private void Start()
     {
@@ -42,6 +44,25 @@ public class Canard : MonoBehaviour
 
         player = GameObject.FindWithTag("Player");
         playerInputRef = player.gameObject.GetComponent<PlayerInput>();
+
+
+        if (Gamepad.current != null)
+        {
+            gamepad = Gamepad.current;
+        }
+        else
+        {
+            Debug.LogWarning("No gamepad found.");
+        }
+    }
+
+    public void StartVibration(float duration, float amplitude)
+    {
+        if (gamepad != null)
+        {
+            gamepad.SetMotorSpeeds(amplitude, amplitude);
+            Invoke("StopVibration", duration);
+        }
     }
     void Update()
     {
@@ -87,11 +108,10 @@ public class Canard : MonoBehaviour
             {
                 Debug.Log("shoot");
                 shakeCamAnim.SetTrigger("ShakeCam");
-                scoreManager.AjouterPoints(points);
+                scoreManager.AjouterPoints(100);
                 ShootEm();
             }
-
-        }
+        }        
     }
 
     public void ShootEm()
@@ -112,5 +132,14 @@ public class Canard : MonoBehaviour
         yield return new WaitForSeconds(0.5f);
         gameObject.SetActive(false);    
 
+    }
+
+    public void OnTriggerEnter2D(Collider2D other)
+    {
+        if (other.CompareTag("DeathZone"))
+        {
+            Debug.Log("deathZone");
+            StartVibration(0.1f, 0.5f);
+        }
     }
 }

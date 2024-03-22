@@ -20,6 +20,8 @@ public class WaveManager : MonoBehaviour
 
     public float searchCountDown = 0.05f;
     public GameObject EndPanel;
+
+    public AudioSource chanson;
    
     public SpawnState state = SpawnState.COUNTING;
 
@@ -69,7 +71,12 @@ public class WaveManager : MonoBehaviour
             {
                 waveCountdown -= Time.deltaTime;
             }
+
+        if (!chanson.isPlaying)
+        {
+            OpenLevel();
         }
+    }
     
 
     IEnumerator SpawnWave(Wave _wave)
