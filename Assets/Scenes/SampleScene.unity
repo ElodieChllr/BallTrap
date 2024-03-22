@@ -2325,10 +2325,10 @@ BoxCollider2D:
   m_Offset: {x: -0.06912327, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0, y: 0}
-    oldSize: {x: 0, y: 0}
-    newSize: {x: 0, y: 0}
-    adaptiveTilingThreshold: 0
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 6.39, y: 1.72}
+    newSize: {x: 6.39, y: 1.72}
+    adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
@@ -6269,7 +6269,7 @@ MonoBehaviour:
   waveCountdown: 0
   searchCountDown: 0.05
   EndPanel: {fileID: 1621588892}
-  chanson: {fileID: 0}
+  chanson: {fileID: 58884760}
   state: 2
 --- !u!1001 &8943849873245675449
 PrefabInstance:
