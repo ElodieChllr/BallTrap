@@ -130,13 +130,13 @@ public class Canard : MonoBehaviour
         explosionQuack.Play();
         //QuackSource.PlayOneShot(QuackClip);
         yield return new WaitForSeconds(0.5f);
-        gameObject.SetActive(false);    
+        Destroy(gameObject);    
 
     }
 
-    public void OnTriggerEnter2D(Collider2D other)
+    public void OnCollisionEnter2D(Collision2D collision)      
     {
-        if (other.CompareTag("DeathZone"))
+        if (collision.gameObject.CompareTag("DeathZone"))
         {
             Debug.Log("deathZone");
             StartVibration(0.1f, 0.5f);

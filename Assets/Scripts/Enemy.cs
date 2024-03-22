@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
+using UnityEngine.InputSystem;
 using UnityEngine.SocialPlatforms.Impl;
 using UnityEngine.UI;
 
@@ -17,7 +18,7 @@ public class Enemy : MonoBehaviour
     //[SerializeField] private float rotationSpeed = 800f;
 
     //public GameObject EffetDeDamage;
-
+    private Gamepad gamepad;
     public float moveSpeed = 5f;
 
     //public AudioSource EnemyDeathSound;
@@ -58,6 +59,15 @@ public class Enemy : MonoBehaviour
     //private WaveManager waveSpawner;
     void Start()
     {
+
+        if (Gamepad.current != null)
+        {
+            gamepad = Gamepad.current;
+        }
+        else
+        {
+            Debug.LogWarning("No gamepad found.");
+        }
         //BOSS
         //nextFireTime = Time.time + fireInterval;
         //
@@ -89,10 +99,11 @@ public class Enemy : MonoBehaviour
 
         pos.y += moveSpeed * Time.deltaTime;
 
-        //if (pos.y <= 20)
-        //{
-        //    Destroy(gameObject);
-        //}
+        if (pos.y >= 6.9f)
+        {
+            StartVibration(0.1f, 0.5f);
+           gameObject.SetActive(false);
+        }
 
         //waveSpawner.waves[waveSpawner.currentWaveIndex].enemiesLeft--;
 
@@ -136,7 +147,7 @@ public class Enemy : MonoBehaviour
     //    yield return new WaitForSeconds(1f);
 
     //    //tir
-        
+
     //    yield break;
     //}
 
@@ -146,4 +157,20 @@ public class Enemy : MonoBehaviour
     //    Instantiate(bulletPrefab, firePoint.position, firePoint.rotation);
     //}
     //
+
+    public void StartVibration(float duration, float amplitude)
+    {
+        if (gamepad != null)
+        {
+            gamepad.SetMotorSpeeds(amplitude, amplitude);
+            Invoke("StopVibration", duration);
+        }
+    }
+    private void StopVibration()
+    {
+        if (gamepad != null)
+        {
+            gamepad.SetMotorSpeeds(0f, 0f);
+        }
+    }
 }
