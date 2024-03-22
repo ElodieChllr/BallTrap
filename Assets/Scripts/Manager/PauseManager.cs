@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.EventSystems;
 using UnityEngine.InputSystem;
 
 public class PauseManager : MonoBehaviour
@@ -13,6 +14,9 @@ public class PauseManager : MonoBehaviour
 
     public Animator settingsAnimator;
     public AudioSource chanson;
+
+    public GameObject BT_Resume;
+
     void Start()
     {
         pnl_Pause.SetActive(false);
@@ -27,6 +31,7 @@ public class PauseManager : MonoBehaviour
             isPaused = !isPaused;
             if (isPaused)
             {
+                EventSystem.current.SetSelectedGameObject(BT_Resume/*.gameObject*/);
                 OpenPause();
             }
             else
