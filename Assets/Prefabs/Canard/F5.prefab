@@ -261,7 +261,7 @@ CircleCollider2D:
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
-  m_Radius: 0.98
+  m_Radius: 1.44
 --- !u!114 &5292237293812577227
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -280,6 +280,7 @@ MonoBehaviour:
   explosionQuack: {fileID: 4199420477613894211}
   player: {fileID: 0}
   particleSystemRef: {fileID: 2255834364602336756}
+  canardKilled: 0
 --- !u!114 &-5716557214462317658
 MonoBehaviour:
   m_ObjectHideFlags: 0
