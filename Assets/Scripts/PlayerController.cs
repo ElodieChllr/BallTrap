@@ -62,17 +62,17 @@ public class PlayerController : MonoBehaviour
         Vector2 move = new Vector2(movement.x, movement.y);
         rb2D.velocity = new Vector2(move.x * speedMove, move.y * speedMove);
 
-        //SonFusil();
+        SonFusil();
     }
 
-    //public void SonFusil()
-    //{
-    //    if (playerInput.actions["Shoot"].WasPerformedThisFrame())
-    //    {   
-    //            fusil.Play();
-    //    }
-    //}
-   
+    public void SonFusil()
+    {
+        if (playerInput.actions["Shoot"].WasPerformedThisFrame())
+        {
+            fusil.Play();
+        }
+    }
+
     //private void Move()
     //{
     //    Vector2 movement = moveAction.ReadValue<Vector2>();
@@ -98,6 +98,6 @@ public class PlayerController : MonoBehaviour
     //}
 
 
-    
+
 
 }
