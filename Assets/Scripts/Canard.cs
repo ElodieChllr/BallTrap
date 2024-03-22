@@ -105,7 +105,7 @@ public class Canard : MonoBehaviour
             other.gameObject.GetComponents<Canard>();
             Debug.Log("on trigger");
 
-            if (playerInputRef.actions["Shoot"].IsPressed())
+            if (playerInputRef.actions["Shoot"].WasPressedThisFrame())
             {
                 Debug.Log("shoot");
                 shakeCamAnim.SetTrigger("ShakeCam");

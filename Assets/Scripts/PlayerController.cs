@@ -23,9 +23,8 @@ public class PlayerController : MonoBehaviour
 
     private Canard canardRef;
 
+    public AudioSource fusil;
 
-    
-   
     private void Awake()
     {
         moveAction = playerInput.actions["MoveAim"];
@@ -63,9 +62,16 @@ public class PlayerController : MonoBehaviour
         Vector2 move = new Vector2(movement.x, movement.y);
         rb2D.velocity = new Vector2(move.x * speedMove, move.y * speedMove);
 
-        
+        SonFusil();
     }
 
+    public void SonFusil()
+    {
+        if (playerInput.actions["Shoot"].WasPressedThisFrame())
+        {
+                fusil.Play();
+        }
+    }
    
     //private void Move()
     //{
