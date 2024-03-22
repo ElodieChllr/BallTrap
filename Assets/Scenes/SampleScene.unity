@@ -345,7 +345,7 @@ AudioSource:
   m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 1
-  Loop: 1
+  Loop: 0
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0
@@ -6269,6 +6269,7 @@ MonoBehaviour:
   waveCountdown: 0
   searchCountDown: 0.05
   EndPanel: {fileID: 1621588892}
+  chanson: {fileID: 0}
   state: 2
 --- !u!1001 &8943849873245675449
 PrefabInstance:

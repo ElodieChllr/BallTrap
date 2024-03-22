@@ -74,7 +74,7 @@ public class WaveManager : MonoBehaviour
 
         if (!chanson.isPlaying)
         {
-            OpenLevel();
+            StartCoroutine(finNiveau());
         }
     }
     
@@ -112,7 +112,7 @@ public class WaveManager : MonoBehaviour
 
         if (nextWave + 1 > waves.Length -1 && EnemyIsAlive() == true)
         {
-            OpenLevel();
+            StartCoroutine(finNiveau());
             //Time.timeScale = 0f;
             state = SpawnState.WAITING;
             //Debug.Log("ALL WAVES COMPLETE");
@@ -140,18 +140,19 @@ public class WaveManager : MonoBehaviour
     }
 
 
-    public void OpenLevel()
-    {
-        EndPanel.SetActive(true);
-        Time.timeScale = 0f;
-        //LevelPanel.SetActive(true);
-    }
+ 
 
     /*public void CloseLevel()
     {
         LevelPanel.SetActive(false);
     }*/
-
+    
+    public IEnumerator finNiveau()
+    {
+        yield return new WaitForSeconds(3f);
+        EndPanel.SetActive(true);
+        Time.timeScale = 0f;
+    }
 
 
 }
