@@ -108,8 +108,8 @@ public class Canard : MonoBehaviour
             if (playerInputRef.actions["Shoot"].IsPressed())
             {
                 Debug.Log("shoot");
-                shakeCamAnim.SetTrigger("ShakeCam");
-                scoreManager.AjouterPoints(100);
+                
+                
                 ShootEm();
             }
         }        
@@ -117,6 +117,7 @@ public class Canard : MonoBehaviour
 
     public void ShootEm()
     {
+        shakeCamAnim.SetTrigger("ShakeCam");
         particleSystemRef.Play();
         this._collider2D.enabled = false;
         QuackSource.Play();
