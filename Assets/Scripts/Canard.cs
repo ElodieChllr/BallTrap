@@ -108,9 +108,18 @@ public class Canard : MonoBehaviour
             if (playerInputRef.actions["Shoot"].IsPressed())
             {
                 Debug.Log("shoot");
-                
-                
-                ShootEm();
+                if (other.CompareTag("Bar"))
+                {
+                    scoreManager.AjouterPointPerfect(1000);
+                    ShootEm();
+
+                    Debug.Log("OnBARRE");
+                }
+                else
+                {
+                    scoreManager.AjouterPoints(100);
+                    ShootEm();
+                }
             }
         }        
     }
@@ -122,6 +131,7 @@ public class Canard : MonoBehaviour
         this._collider2D.enabled = false;
         QuackSource.Play();
         explosionQuack.Play();
+        StartVibration(0.5f, 1f);
         Debug.Log("ShootEm");
         this.spriteRenderer.enabled = false;
         this._collider2D.enabled = false;

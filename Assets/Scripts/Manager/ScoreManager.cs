@@ -31,6 +31,12 @@ public class ScoreManager : MonoBehaviour
 
         MettreAJourAffichageScore();
     }
+    public void AjouterPointPerfect(int points)
+    {
+        scoreActuel += points;
+
+        MettreAJourAffichageScore();
+    }
 
     public void EnleverPoints(int pointAEnlever)
     {

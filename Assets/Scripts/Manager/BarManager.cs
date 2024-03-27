@@ -23,7 +23,8 @@ public class BarManager : MonoBehaviour
         if(other.CompareTag("Player")&& other.CompareTag("Enemy") && playerControllerRef.playerControls.actions["Shoot"].WasPerformedThisFrame())
         {
             Debug.Log("shoot");
-            other.gameObject.GetComponent<Canard>();
+            Canard.ShootEm();
+            //other.gameObject.GetComponent<Canard>();
             Debug.Log("take script");
         }
     }
