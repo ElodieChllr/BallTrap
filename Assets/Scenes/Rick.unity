@@ -2890,7 +2890,7 @@ GameObject:
   - component: {fileID: 1241749654}
   - component: {fileID: 1241749656}
   - component: {fileID: 1241749657}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: Bar
   m_TagString: Bar
   m_Icon: {fileID: 0}
