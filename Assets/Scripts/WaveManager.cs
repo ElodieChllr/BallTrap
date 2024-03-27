@@ -27,6 +27,8 @@ public class WaveManager : MonoBehaviour
 
     public SpawnState state = SpawnState.COUNTING;
 
+    public ScoreManager scoreManagerRef;
+
    // public GameObject LevelPanel;
 
 
@@ -148,7 +150,8 @@ public class WaveManager : MonoBehaviour
     
     public IEnumerator finNiveau()
     {
-        yield return new WaitForSeconds(145f);
+        yield return new WaitForSeconds(5f);
+        scoreManagerRef.GameOverScore();
         EndPanel.SetActive(true);
         EventSystem.current.SetSelectedGameObject(BT_MainMenu/*.gameObject*/);
         Time.timeScale = 0f;

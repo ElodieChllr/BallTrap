@@ -7,14 +7,23 @@ public class ScoreManager : MonoBehaviour
 {
     public int scoreInitial = 0;
 
-    public Text textScore;
+    public Text txt_score;
+    public Text txt_bestScore;
 
-    public int scoreActuel;
+    public Text txt_scoreFinal;
+
+
+    public static int score;
+    public static int bestScore = 0;
+    private string bestScoreKey = "BestScore";
 
 
     void Start()
     {
-        scoreActuel = scoreInitial;
+        score = scoreInitial;
+
+        int savedBestScore = PlayerPrefs.GetInt("BestScore", 0);
+        UpdateBestScoreText(savedBestScore);
 
         MettreAJourAffichageScore();
     }
@@ -22,38 +31,59 @@ public class ScoreManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        txt_scoreFinal.text = score.ToString();
     }
 
     public void AjouterPoints(int points)
     {
-        scoreActuel += points;
+        score += points;
 
         MettreAJourAffichageScore();
     }
     public void AjouterPointPerfect(int points)
     {
-        scoreActuel += points;
+        score += points;
 
         MettreAJourAffichageScore();
     }
 
     public void EnleverPoints(int pointAEnlever)
     {
-        scoreActuel -= pointAEnlever;
+        score -= pointAEnlever;
 
         MettreAJourAffichageScore();
     }
 
     private void MettreAJourAffichageScore()
     {
-        textScore.text = scoreActuel.ToString();
+        txt_score.text = score.ToString();
+        txt_scoreFinal.text = score.ToString();
     }
 
     public void ReinitialiserScore()
     {
-        scoreActuel = scoreInitial;
+        score = scoreInitial;
 
+        MettreAJourAffichageScore();
+    }
+
+    void UpdateBestScoreText(int newBestScore)
+    {
+        txt_bestScore.text = newBestScore.ToString();
+    }
+
+    public void GameOverScore()
+    {
+        
+        if(score > bestScore)
+        {
+            bestScore = score;
+            PlayerPrefs.SetInt(bestScoreKey,bestScore);
+            PlayerPrefs.Save();
+            UpdateBestScoreText(bestScore);
+        }
+
+        //score = 0;
         MettreAJourAffichageScore();
     }
 }
