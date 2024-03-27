@@ -150,7 +150,7 @@ public class WaveManager : MonoBehaviour
     
     public IEnumerator finNiveau()
     {
-        yield return new WaitForSeconds(5f);
+        yield return new WaitForSeconds(145f);
         scoreManagerRef.GameOverScore();
         EndPanel.SetActive(true);
         EventSystem.current.SetSelectedGameObject(BT_MainMenu/*.gameObject*/);

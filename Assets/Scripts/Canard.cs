@@ -28,7 +28,8 @@ public class Canard : MonoBehaviour
     public GameObject player;
 
     public ParticleSystem particleSystemRef;
-
+    
+    private BarManager barManager;
 
     private Gamepad gamepad;
     public bool canardKilled = false;
@@ -107,7 +108,7 @@ public class Canard : MonoBehaviour
 
             if (other.CompareTag("Bar"))
             {
-                Debug.Log("pouette");
+                Debug.Log("BARRRE");
                 if (playerInputRef.actions["Shoot"].IsPressed())
                 {
                     Debug.Log("Perfect");
@@ -126,7 +127,7 @@ public class Canard : MonoBehaviour
                     scoreManager.AjouterPoints(100);
                 }
             }
-           
+
         }     
     }
 
