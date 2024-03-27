@@ -107,6 +107,7 @@ public class Canard : MonoBehaviour
 
             if (other.CompareTag("Bar"))
             {
+                Debug.Log("pouette");
                 if (playerInputRef.actions["Shoot"].IsPressed())
                 {
                     Debug.Log("Perfect");
@@ -126,7 +127,7 @@ public class Canard : MonoBehaviour
                 }
             }
            
-        }        
+        }     
     }
 
     public void ShootEm()
@@ -136,7 +137,7 @@ public class Canard : MonoBehaviour
         this._collider2D.enabled = false;
         QuackSource.Play();
         explosionQuack.Play();
-        StartVibration(0.5f, 1f);
+        StartVibration(5f, 1f);
         Debug.Log("ShootEm");
         this.spriteRenderer.enabled = false;
         this._collider2D.enabled = false;

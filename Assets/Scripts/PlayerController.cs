@@ -11,6 +11,10 @@ public class PlayerController : MonoBehaviour
     public float minX = -7f;
     public float maxX = 7f;
 
+    public bool onCanard = false;
+
+    private Gamepad gamepad;
+
     //private VirtualMouseUI virtualMouse;
 
     public PlayerInput playerControls;
@@ -35,6 +39,16 @@ public class PlayerController : MonoBehaviour
         rb2D = GetComponent<Rigidbody2D>();
         
         transform.position = new Vector3(transform.position.x, transform.position.y, 0);
+
+
+        if (Gamepad.current != null)
+        {
+            gamepad = Gamepad.current;
+        }
+        else
+        {
+            Debug.LogWarning("No gamepad found.");
+        }
 
     }
 
@@ -69,7 +83,53 @@ public class PlayerController : MonoBehaviour
     {
         if (playerInput.actions["Shoot"].WasPerformedThisFrame())
         {
-            fusil.Play();
+            if(onCanard == true)
+            {
+                fusil.Play();
+                StartVibration(0.1f, 1f);
+            }
+            else if(onCanard == false)
+            {
+                fusil.Play();
+                StartVibration(0.1f, 0.5f);
+            }
+            
+        }
+    }
+
+    private void OnTriggerEnter2D(Collider2D other)
+    {
+        if (other.CompareTag("Enemy"))
+        {
+            onCanard = true;
+            Debug.Log("on Canard");
+        }
+    }
+    private void OnTriggerExit2D(Collider2D other)
+    {
+        if (other.CompareTag("Enemy"))
+        {
+            onCanard = false;
+            Debug.Log("plus on Canard");
+        }        
+    }
+
+
+
+    public void StartVibration(float duration, float amplitude)
+    {
+        if (gamepad != null)
+        {
+            gamepad.SetMotorSpeeds(amplitude, amplitude);
+            Invoke("StopVibration", duration);
+        }
+    }
+
+    private void StopVibration()
+    {
+        if (gamepad != null)
+        {
+            gamepad.SetMotorSpeeds(0f, 0f);
         }
     }
 
