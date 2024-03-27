@@ -9,7 +9,7 @@ public class BarManager : MonoBehaviour
     Canard Canard;
     ScoreManager scoreManager;
 
-    private bool barreTrigger;
+    public bool barreTrigger;
     void Start()
     {
         barreTrigger = false;
@@ -20,7 +20,7 @@ public class BarManager : MonoBehaviour
     // Update is called once per frame
     void FixedUpdate()
     {
-        BarreTrigger();
+       // BarreTrigger();
     }
 
 

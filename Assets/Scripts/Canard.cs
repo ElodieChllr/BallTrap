@@ -43,6 +43,7 @@ public class Canard : MonoBehaviour
         virtualMouseUI = GetComponent<VirtualMouseUI>();
 
         scoreManager = GameObject.FindGameObjectWithTag("ScoreManager").GetComponent<ScoreManager>();
+        barManager = GameObject.FindGameObjectWithTag("Dead").GetComponent<BarManager>();
 
         player = GameObject.FindWithTag("Player");
         playerInputRef = player.gameObject.GetComponent<PlayerInput>();
@@ -106,7 +107,7 @@ public class Canard : MonoBehaviour
             other.gameObject.GetComponents<Canard>();
             Debug.Log("on trigger");
 
-            if (other.CompareTag("Bar"))
+            if (barManager.barreTrigger == true)
             {
                 Debug.Log("BARRRE");
                 if (playerInputRef.actions["Shoot"].IsPressed())
