@@ -83,7 +83,7 @@ public class ScoreManager : MonoBehaviour
             UpdateBestScoreText(bestScore);
         }
 
-        //score = 0;
+        score = 0;
         MettreAJourAffichageScore();
     }
 }
