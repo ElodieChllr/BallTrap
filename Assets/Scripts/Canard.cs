@@ -105,22 +105,27 @@ public class Canard : MonoBehaviour
             other.gameObject.GetComponents<Canard>();
             Debug.Log("on trigger");
 
-            if (playerInputRef.actions["Shoot"].IsPressed())
+            if (other.CompareTag("Bar"))
             {
-                Debug.Log("shoot");
-                if (other.CompareTag("Bar"))
+                if (playerInputRef.actions["Shoot"].IsPressed())
                 {
+                    Debug.Log("Perfect");
+                    ShootEm();
                     scoreManager.AjouterPointPerfect(1000);
-                    ShootEm();
-
-                    Debug.Log("OnBARRE");
                 }
-                else
+
+                Debug.Log("OnBARRE");
+            }
+            else
+            {
+                if (playerInputRef.actions["Shoot"].IsPressed())
                 {
-                    scoreManager.AjouterPoints(100);
+                    Debug.Log("Normal");
                     ShootEm();
+                    scoreManager.AjouterPoints(100);
                 }
             }
+           
         }        
     }
 
