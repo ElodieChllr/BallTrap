@@ -109,6 +109,7 @@ public class Enemy : MonoBehaviour
             if(gameObject.tag == "Enemy")
             {
                 scoreManagerRef.EnleverPoints(50);
+                scoreManagerRef.StartCoroutine(scoreManagerRef.LoseScoreColor());
                 StartVibration(0.1f, 0.5f);
                 gameObject.SetActive(false);
             }

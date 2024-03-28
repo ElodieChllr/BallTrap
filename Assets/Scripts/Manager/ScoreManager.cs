@@ -77,6 +77,7 @@ public class ScoreManager : MonoBehaviour
         
         if(score > bestScore)
         {
+            txt_scoreFinal.text = score.ToString();
             bestScore = score;
             PlayerPrefs.SetInt(bestScoreKey,bestScore);
             PlayerPrefs.Save();
@@ -85,5 +86,26 @@ public class ScoreManager : MonoBehaviour
 
         score = 0;
         MettreAJourAffichageScore();
+    }
+
+    public IEnumerator LoseScoreColor()
+    {
+        txt_score.color = Color.red;
+        yield return new WaitForSeconds(0.5f);
+        txt_score.color = Color.white;
+    }
+
+    public IEnumerator ShootScoreColor()
+    {
+        txt_score.color = Color.green;
+        yield return new WaitForSeconds(0.5f);
+        txt_score.color = Color.white;
+    }
+
+    public IEnumerator PerfectScoreColor()
+    {
+        txt_score.color = Color.yellow;
+        yield return new WaitForSeconds(0.5f);
+        txt_score.color = Color.white;
     }
 }

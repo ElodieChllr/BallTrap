@@ -9,7 +9,7 @@ using UnityEngine.SceneManagement;
 public class Canard : MonoBehaviour
 {
     public int points = 10;
-    private ScoreManager scoreManager;
+    private ScoreManager scoreManagerRef;
     public CanardManager canardManagerRef;
     //public AudioClip QuackClip;
     public AudioSource QuackSource;
@@ -27,7 +27,9 @@ public class Canard : MonoBehaviour
     private PlayerInput playerInputRef;
     public GameObject player;
 
-    public ParticleSystem particleSystemRef;
+    public ParticleSystem shootCanard;
+    public ParticleSystem perfectShoot;
+    public ParticleSystem missShoot;
     
     private BarManager barManager;
 
@@ -42,7 +44,7 @@ public class Canard : MonoBehaviour
         shakeCamAnim = GameObject.FindWithTag("MainCamera").GetComponent<Animator>();
         virtualMouseUI = GetComponent<VirtualMouseUI>();
 
-        scoreManager = GameObject.FindGameObjectWithTag("ScoreManager").GetComponent<ScoreManager>();
+        scoreManagerRef = GameObject.FindGameObjectWithTag("ScoreManager").GetComponent<ScoreManager>();
         barManager = GameObject.FindGameObjectWithTag("Dead").GetComponent<BarManager>();
 
         player = GameObject.FindWithTag("Player");
@@ -114,7 +116,9 @@ public class Canard : MonoBehaviour
                 {
                     Debug.Log("Perfect");
                     ShootEm();
-                    scoreManager.AjouterPointPerfect(1000);
+                    this.perfectShoot.Play();
+                    scoreManagerRef.StartCoroutine(scoreManagerRef.PerfectScoreColor());
+                    scoreManagerRef.AjouterPointPerfect(1000);
                 }
 
                 Debug.Log("OnBARRE");
@@ -124,8 +128,10 @@ public class Canard : MonoBehaviour
                 if (playerInputRef.actions["Shoot"].WasPerformedThisFrame())
                 {
                     Debug.Log("Normal");
+                    this.missShoot.Play();
+                    scoreManagerRef.StartCoroutine(scoreManagerRef.ShootScoreColor());
                     ShootEm();
-                    scoreManager.AjouterPoints(100);
+                    scoreManagerRef.AjouterPoints(100);
                 }
             }
 
@@ -135,7 +141,7 @@ public class Canard : MonoBehaviour
     public void ShootEm()
     {
         shakeCamAnim.SetTrigger("ShakeCam");
-        particleSystemRef.Play();
+        shootCanard.Play();
         this._collider2D.enabled = false;
         QuackSource.Play();
         explosionQuack.Play();

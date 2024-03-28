@@ -10,6 +10,9 @@ public class BarManager : MonoBehaviour
     ScoreManager scoreManager;
 
     public bool barreTrigger;
+    //public bool canardShoot;
+
+    private Canard canardRef;
     void Start()
     {
         barreTrigger = false;
@@ -28,6 +31,9 @@ public class BarManager : MonoBehaviour
     {
         if (collision.CompareTag("Enemy") )
             barreTrigger = true;
+        canardRef = collision.gameObject.GetComponent<Canard>();
+        //Debug.Log("canard Pris");
+        //canardRef.QuackSource.Play();
 
     }
     private void OnTriggerExit2D(Collider2D collision)
@@ -38,14 +44,15 @@ public class BarManager : MonoBehaviour
         }
     }
 
-    public void BarreTrigger()
-    {
-        if (barreTrigger && playerControllerRef.playerInput.actions["Shoot"].WasPerformedThisFrame())
-        {
-            Debug.Log("Barrrrrre");
-            scoreManager.AjouterPointPerfect(1000);
-        }
-        else
-            Debug.Log("U Miss noob");
-    }
+    //public void BarreTrigger()
+    //{
+    //    if (barreTrigger && playerControllerRef.playerInput.actions["Shoot"].WasPerformedThisFrame())
+    //    {
+    //        Debug.Log("Barrrrrre");
+    //        canardRef.perfectShoot.Play();
+    //        scoreManager.AjouterPointPerfect(1000);
+    //    }
+    //    else
+    //        Debug.Log("U Miss noob");
+    //}
 }
