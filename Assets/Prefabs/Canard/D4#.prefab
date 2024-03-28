@@ -14691,6 +14691,7 @@ GameObject:
   - component: {fileID: 8433229478958356591}
   - component: {fileID: 5134031378579747279}
   - component: {fileID: 6694570276091905640}
+  - component: {fileID: 5138605604153157266}
   m_Layer: 5
   m_Name: D4#
   m_TagString: Enemy
@@ -19848,6 +19849,27 @@ ParticleSystemRenderer:
   m_MeshWeighting2: 1
   m_MeshWeighting3: 1
   m_MaskInteraction: 0
+--- !u!95 &5138605604153157266
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6404625759522022900}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 9d6817982b39df549adedddc71c87424, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &7413773931916322044
 GameObject:
   m_ObjectHideFlags: 0

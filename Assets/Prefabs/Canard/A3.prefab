@@ -9799,6 +9799,7 @@ GameObject:
   - component: {fileID: 8433229478958356591}
   - component: {fileID: 5134031378579747279}
   - component: {fileID: 6694570276091905640}
+  - component: {fileID: 7390751256044345400}
   m_Layer: 5
   m_Name: A3
   m_TagString: Enemy
@@ -9826,7 +9827,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -0.05333724, y: 2.33}
+  m_AnchoredPosition: {x: -0.32, y: 2.1}
   m_SizeDelta: {x: 2.7, y: 2.06}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!212 &5570483918633764356
@@ -14956,6 +14957,27 @@ ParticleSystemRenderer:
   m_MeshWeighting2: 1
   m_MeshWeighting3: 1
   m_MaskInteraction: 0
+--- !u!95 &7390751256044345400
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6404625759522022900}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 6dc55c04d380d5b4cbe43770060b818e, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &7413773931916322044
 GameObject:
   m_ObjectHideFlags: 0
