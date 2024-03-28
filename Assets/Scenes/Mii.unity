@@ -495,7 +495,7 @@ AudioSource:
   m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 1
-  Loop: 0
+  Loop: 1
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0
@@ -6321,7 +6321,7 @@ MonoBehaviour:
   - name: A3
     enemy: {fileID: 8698005530218634122, guid: 723b312784b22f64cab0e7af7e0990f9, type: 3}
     count: 1
-    rate: 1
+    rate: 0
   - name: A3#
     enemy: {fileID: 8698005530218634122, guid: c4a7034d17c7e4340b099d86fc47e601, type: 3}
     count: 1
@@ -6353,7 +6353,7 @@ MonoBehaviour:
   - name: C4
     enemy: {fileID: 8698005530218634122, guid: 9715cf132e8f9f24f8426b371710ddff, type: 3}
     count: 1
-    rate: 0
+    rate: 1
   - name: C4#
     enemy: {fileID: 8698005530218634122, guid: 954f3f0cfb483d6409e7a92463be9f60, type: 3}
     count: 1
@@ -6385,7 +6385,7 @@ MonoBehaviour:
   - name: C4#
     enemy: {fileID: 8698005530218634122, guid: 954f3f0cfb483d6409e7a92463be9f60, type: 3}
     count: 1
-    rate: 0
+    rate: 1
   - name: D4#
     enemy: {fileID: 8698005530218634122, guid: 3d1bcf5f9e7f02d4bb42a75bb0038557, type: 3}
     count: 1
@@ -6428,7 +6428,8 @@ MonoBehaviour:
   BT_MainMenu: {fileID: 339067683}
   state: 2
   scoreManagerRef: {fileID: 1280632359}
-  timeToEnd: 89
+  timeToEnd: 83
+  audioLVL: {fileID: 58884760}
 --- !u!1001 &8943849873245675449
 PrefabInstance:
   m_ObjectHideFlags: 0

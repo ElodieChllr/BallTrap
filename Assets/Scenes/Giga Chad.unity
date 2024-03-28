@@ -492,7 +492,7 @@ AudioSource:
   m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 1
-  Loop: 0
+  Loop: 1
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0
@@ -6364,7 +6364,8 @@ MonoBehaviour:
   BT_MainMenu: {fileID: 180466182}
   state: 2
   scoreManagerRef: {fileID: 1280632359}
-  timeToEnd: 69
+  timeToEnd: 112
+  audioLVL: {fileID: 58884760}
 --- !u!1001 &8943849873245675449
 PrefabInstance:
   m_ObjectHideFlags: 0

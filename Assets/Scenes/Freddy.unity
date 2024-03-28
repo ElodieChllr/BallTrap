@@ -6243,12 +6243,13 @@ MonoBehaviour:
   timeBetweenWaves: 0.075
   waveCountdown: 0
   searchCountDown: 0.05
-  EndPanel: {fileID: 0}
+  EndPanel: {fileID: 670589596}
   chanson: {fileID: 58884760}
   BT_MainMenu: {fileID: 0}
   state: 2
   scoreManagerRef: {fileID: 0}
-  timeToEnd: 83
+  timeToEnd: 56
+  audioLVL: {fileID: 58884760}
 --- !u!1001 &8943849873245675449
 PrefabInstance:
   m_ObjectHideFlags: 0

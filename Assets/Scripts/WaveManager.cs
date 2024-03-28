@@ -30,6 +30,7 @@ public class WaveManager : MonoBehaviour
     public ScoreManager scoreManagerRef;
 
     public int timeToEnd;
+    public AudioSource audioLVL;
 
    // public GameObject LevelPanel;
 
@@ -154,6 +155,7 @@ public class WaveManager : MonoBehaviour
     {
         yield return new WaitForSeconds(timeToEnd);
         scoreManagerRef.GameOverScore();
+        audioLVL.Stop();
         EndPanel.SetActive(true);
         EventSystem.current.SetSelectedGameObject(BT_MainMenu/*.gameObject*/);
         Time.timeScale = 0f;
