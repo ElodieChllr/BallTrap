@@ -695,7 +695,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   pnl_Pause: {fileID: 636392579}
-  player: {fileID: 0}
+  player: {fileID: 1485750628}
   settingsAnimator: {fileID: 860195936}
   chanson: {fileID: 58884760}
   BT_Resume: {fileID: 1275225245}
@@ -6245,9 +6245,9 @@ MonoBehaviour:
   searchCountDown: 0.05
   EndPanel: {fileID: 670589596}
   chanson: {fileID: 58884760}
-  BT_MainMenu: {fileID: 0}
+  BT_MainMenu: {fileID: 638898127}
   state: 2
-  scoreManagerRef: {fileID: 0}
+  scoreManagerRef: {fileID: 1280632359}
   timeToEnd: 56
   audioLVL: {fileID: 58884760}
 --- !u!1001 &8943849873245675449
