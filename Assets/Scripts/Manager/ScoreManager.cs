@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 public class ScoreManager : MonoBehaviour
@@ -18,11 +19,26 @@ public class ScoreManager : MonoBehaviour
     private string bestScoreKey = "BestScore";
 
 
+    private string GetBestScoreKeyForScene(string sceneName)
+    {
+        return "BestScore_" + sceneName;
+    }
+
+    private int GetBestScoreForScene(string sceneName)
+    {
+        string sceneBestScoreKey = GetBestScoreKeyForScene(sceneName);
+        return PlayerPrefs.GetInt(sceneBestScoreKey, 0);
+    }
+
     void Start()
     {
         score = scoreInitial;
 
-        int savedBestScore = PlayerPrefs.GetInt("BestScore", 0);
+        
+        string currentSceneName = SceneManager.GetActiveScene().name;
+
+        
+        int savedBestScore = GetBestScoreForScene(currentSceneName);
         UpdateBestScoreText(savedBestScore);
 
         MettreAJourAffichageScore();
@@ -74,17 +90,23 @@ public class ScoreManager : MonoBehaviour
 
     public void GameOverScore()
     {
-        
-        if(score > bestScore)
+        txt_scoreFinal.text = score.ToString();
+        string currentSceneName = SceneManager.GetActiveScene().name;
+
+        int savedBestScore = GetBestScoreForScene(currentSceneName);
+
+        if (score > savedBestScore)
         {
-            txt_scoreFinal.text = score.ToString();
             bestScore = score;
-            PlayerPrefs.SetInt(bestScoreKey,bestScore);
+            PlayerPrefs.SetInt(GetBestScoreKeyForScene(currentSceneName), bestScore);
             PlayerPrefs.Save();
             UpdateBestScoreText(bestScore);
         }
+        else
+        {
+            UpdateBestScoreText(savedBestScore);
+        }
 
-        score = 0;
         MettreAJourAffichageScore();
     }
 
