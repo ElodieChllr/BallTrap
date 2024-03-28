@@ -112,7 +112,7 @@ public class Canard : MonoBehaviour
             if (barManager.barreTrigger == true)
             {
                 Debug.Log("BARRRE");
-                if (playerInputRef.actions["Shoot"].WasPerformedThisFrame())
+                if (playerInputRef.actions["Shoot"].IsPressed())
                 {
                     Debug.Log("Perfect");
                     ShootEm();
@@ -125,7 +125,7 @@ public class Canard : MonoBehaviour
             }
             else
             {
-                if (playerInputRef.actions["Shoot"].WasPerformedThisFrame())
+                if (playerInputRef.actions["Shoot"].IsPressed())
                 {
                     Debug.Log("Normal");
                     this.missShoot.Play();

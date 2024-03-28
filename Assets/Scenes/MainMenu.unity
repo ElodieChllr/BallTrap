@@ -1771,8 +1771,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: MainMenuManager, Assembly-CSharp
+      - m_Target: {fileID: 289498052}
+        m_TargetAssemblyTypeName: GameManager, Assembly-CSharp
         m_MethodName: OpenSelections
         m_Mode: 1
         m_Arguments:
