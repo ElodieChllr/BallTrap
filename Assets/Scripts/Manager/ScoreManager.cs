@@ -97,14 +97,14 @@ public class ScoreManager : MonoBehaviour
 
     public IEnumerator ShootScoreColor()
     {
-        txt_score.color = Color.green;
+        txt_score.color = Color.yellow;
         yield return new WaitForSeconds(0.5f);
         txt_score.color = Color.white;
     }
 
     public IEnumerator PerfectScoreColor()
     {
-        txt_score.color = Color.yellow;
+        txt_score.color = Color.green;
         yield return new WaitForSeconds(0.5f);
         txt_score.color = Color.white;
     }
