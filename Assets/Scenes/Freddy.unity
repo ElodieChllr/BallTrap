@@ -6088,8 +6088,8 @@ MonoBehaviour:
     rate: 1
   - name: 0
     enemy: {fileID: 0}
-    count: 1
-    rate: 0.1
+    count: 0
+    rate: 0
   - name: F4
     enemy: {fileID: 8698005530218634122, guid: 5ac1f3caa7bb1ec43ba25ad4f28f714f, type: 3}
     count: 1
@@ -6248,6 +6248,7 @@ MonoBehaviour:
   BT_MainMenu: {fileID: 0}
   state: 2
   scoreManagerRef: {fileID: 0}
+  timeToEnd: 83
 --- !u!1001 &8943849873245675449
 PrefabInstance:
   m_ObjectHideFlags: 0

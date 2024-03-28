@@ -29,6 +29,8 @@ public class WaveManager : MonoBehaviour
 
     public ScoreManager scoreManagerRef;
 
+    public int timeToEnd;
+
    // public GameObject LevelPanel;
 
 
@@ -150,7 +152,7 @@ public class WaveManager : MonoBehaviour
     
     public IEnumerator finNiveau()
     {
-        yield return new WaitForSeconds(145f);
+        yield return new WaitForSeconds(timeToEnd);
         scoreManagerRef.GameOverScore();
         EndPanel.SetActive(true);
         EventSystem.current.SetSelectedGameObject(BT_MainMenu/*.gameObject*/);

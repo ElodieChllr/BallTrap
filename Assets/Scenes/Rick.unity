@@ -7181,6 +7181,7 @@ MonoBehaviour:
   BT_MainMenu: {fileID: 165842282}
   state: 2
   scoreManagerRef: {fileID: 1280632359}
+  timeToEnd: 145
 --- !u!1001 &8943849873245675449
 PrefabInstance:
   m_ObjectHideFlags: 0
