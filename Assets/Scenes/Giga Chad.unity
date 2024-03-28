@@ -6152,8 +6152,8 @@ MonoBehaviour:
     rate: 1
   - name: 0
     enemy: {fileID: 0}
-    count: 0
-    rate: 0
+    count: 1
+    rate: 0.1
   - name: E4
     enemy: {fileID: 8698005530218634122, guid: 5365ef78a620f91458d887a33c0cd190, type: 3}
     count: 1

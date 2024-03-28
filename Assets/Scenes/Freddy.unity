@@ -6088,8 +6088,8 @@ MonoBehaviour:
     rate: 1
   - name: 0
     enemy: {fileID: 0}
-    count: 0
-    rate: 0
+    count: 1
+    rate: 0.1
   - name: F4
     enemy: {fileID: 8698005530218634122, guid: 5ac1f3caa7bb1ec43ba25ad4f28f714f, type: 3}
     count: 1
@@ -6232,10 +6232,6 @@ MonoBehaviour:
     rate: 1
   - name: A4
     enemy: {fileID: 8698005530218634122, guid: 79f136493ccefd94a9faa96a61288a36, type: 3}
-    count: 1
-    rate: 1
-  - name: G4
-    enemy: {fileID: 8698005530218634122, guid: e6a21582d74da794d88b55cbc81b2dd4, type: 3}
     count: 1
     rate: 1
   nextWave: 0
