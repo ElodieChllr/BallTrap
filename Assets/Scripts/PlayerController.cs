@@ -29,10 +29,13 @@ public class PlayerController : MonoBehaviour
 
     public AudioSource fusil;
 
+    public GameObject fusilTir;
+
     private void Awake()
     {
         moveAction = playerInput.actions["MoveAim"];
         playerControls = GetComponent<PlayerInput>();
+        fusilTir.SetActive(false);
     }
     private void Start()
     {
@@ -86,15 +89,19 @@ public class PlayerController : MonoBehaviour
             if(onCanard == true)
             {
                 fusil.Play();
+                fusilTir.SetActive(true);
                 StartVibration(0.1f, 1f);
             }
             else if(onCanard == false)
             {
                 fusil.Play();
+                fusilTir.SetActive(true);
                 StartVibration(0.1f, 0.5f);
             }
             
         }
+        else
+            fusilTir.SetActive(false);
     }
 
     private void OnTriggerEnter2D(Collider2D other)
