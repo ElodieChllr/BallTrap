@@ -6211,11 +6211,11 @@ MonoBehaviour:
     count: 1
     rate: 1
   - name: D6
-    enemy: {fileID: 0}
+    enemy: {fileID: 8698005530218634122, guid: 2025b9249d39cf04e89d3aab5d8cffdd, type: 3}
     count: 1
     rate: 1
   - name: C6
-    enemy: {fileID: 0}
+    enemy: {fileID: 8698005530218634122, guid: e26865175098f8c4f8bee49b69c78492, type: 3}
     count: 1
     rate: 1
   - name: F4
