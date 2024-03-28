@@ -3298,6 +3298,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playerControllerRef: {fileID: 777542706}
+  barreTrigger: 0
 --- !u!50 &1241749658
 Rigidbody2D:
   serializedVersion: 4

@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: f7b70efffc0b12e46a38ed1440f0cb54
+guid: efbb2debed3323b4fa4b20a50977dfa6
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -43,7 +43,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -121,7 +121,28 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: aileArmee_oiev2_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 118
+        height: 109
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 835b8550a45be6242be7050a74e7b4d5
+      internalID: -821705025
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
@@ -132,7 +153,8 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      aileArmee_oiev2_0: -821705025
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
